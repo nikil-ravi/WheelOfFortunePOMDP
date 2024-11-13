@@ -1,0 +1,1 @@
+wheel_values = [500, 600, 700, 800, 900, 1000, "Bankrupt", "Lose a Turn"]
