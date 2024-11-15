@@ -3,21 +3,24 @@ from data.phrases import phrases
 from data.wheel_values import wheel_values
 from constants import *
 from player import Player
+from naive_player import NaivePlayer
 
 import time
 
 class WheelOfFortune:
-    def __init__(self, phrases, wheel_values, num_players=2):
+    def __init__(self, phrases, wheel_values, num_players=2, player_class= Player):
         self.phrases = phrases
         self.wheel_values = wheel_values
-        self.players = [Player(i) for i in range(num_players)]
+        self.players = [player_class(i) for i in range(num_players)]
         self.reset_game() # to initialize the game
 
     def reset_game(self):
         self.current_phrase = random.choice(self.phrases).upper()
+        print(f"The word is: {self.current_phrase}. Let's play!")
         self.current_player = 0 # TODO: should this be random?
         self.bankrupt = [False] * len(self.players)
         self.guessed_letters = set()
+        self.guessed_phrases = set()
 
         # revealed phrase initially has underscores and spaces
         self.revealed_phrase = ['_' if letter.isalpha() else letter for letter in self.current_phrase]
@@ -67,17 +70,22 @@ class WheelOfFortune:
 
     def solve_puzzle(self, guess):
         guess = guess.upper()
+        
         if guess == self.current_phrase:
             print("Congratulations! Player {} solved the puzzle!".format(self.current_player + 1))
+            self.revealed_phrase = list(self.current_phrase)
+            print("The phrase was:", ' '.join(self.revealed_phrase))
             return True
         else:
             print("Incorrect solution.")
+            self.guessed_phrases.add(guess)
             return False
 
     def display_status(self):
         print("Phrase:", ' '.join(self.revealed_phrase))
         print(f"Scores: {', '.join([f'Player {i+1}: {score}' for i, score in enumerate(self.scores)])}")
         print(f"Guessed Letters: {', '.join(sorted(self.guessed_letters))}")
+        print(f"Guessed Phrases: {', '.join(sorted(self.guessed_phrases))}")
 
     def play_turn(self):
         current_player = self.players[self.current_player]
@@ -97,11 +105,11 @@ class WheelOfFortune:
             self.current_player = (self.current_player + 1) % len(self.players)
             #time.sleep(0.5)
         if self.is_solved():
-            print("You have solved the puzzle!")
-            self.display_status()
+            print("Congrats to Player {} for solving the puzzle!".format(self.current_player + 1))
+            # self.display_status()
         else:
             print("Game over.")
 
 if __name__ == "__main__":
-    game = WheelOfFortune(phrases, wheel_values)
+    game = WheelOfFortune(phrases, wheel_values, player_class= Player)
     game.start_game()

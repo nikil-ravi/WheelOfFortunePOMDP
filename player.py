@@ -8,6 +8,7 @@ class Player:
 
     def take_turn(self, game):
         action = action = self.choose_action()
+        print(f"Player {self.player_id + 1} chose action: {action}")
         if action == 'S':
             self.spin(game)
         elif action == 'B':
