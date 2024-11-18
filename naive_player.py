@@ -19,32 +19,7 @@ class NaivePlayer(Player):
         revealed_phrase = ''.join(self.game.revealed_phrase)
         print("Trying to choose solution for revealed phrase:", revealed_phrase)
                 
-        possible_solutions = []
-
-        for phrase in self.game.phrases:
-            if phrase.upper() in self.game.guessed_phrases:
-                continue
-
-            if len(phrase) != len(revealed_phrase):
-                continue
-
-            matches_pattern = True
-            for c1, c2 in zip(revealed_phrase, phrase):
-                if c1 != '_' and c1.upper() != c2.upper():
-                    matches_pattern = False
-                    break
-            if not matches_pattern:
-                continue
-
-            consistent_with_guesses = True
-            for letter in self.game.guessed_letters:
-                if (letter.upper() in phrase.upper()) != (letter.upper() in revealed_phrase.upper()):
-                    consistent_with_guesses = False
-                    break
-            if not consistent_with_guesses:
-                continue
-
-            possible_solutions.append(phrase)
+        possible_solutions = self.get_possible_solutions()
 
         # print("Possible solutions:", possible_solutions)
         return random.choice(possible_solutions) if possible_solutions else ""
@@ -92,3 +67,34 @@ class NaivePlayer(Player):
             game.scores[self.player_id] += points
         else:
             print("Incorrect guess.")
+
+    def get_possible_solutions(self):
+        revealed_phrase = ''.join(self.game.revealed_phrase)
+        possible_solutions = []
+
+        for phrase in self.game.phrases:
+            if phrase.upper() in self.game.guessed_phrases:
+                continue
+
+            if len(phrase) != len(revealed_phrase):
+                continue
+
+            matches_pattern = True
+            for c1, c2 in zip(revealed_phrase, phrase):
+                if c1 != '_' and c1.upper() != c2.upper():
+                    matches_pattern = False
+                    break
+            if not matches_pattern:
+                continue
+
+            consistent_with_guesses = True
+            for letter in self.game.guessed_letters:
+                if (letter.upper() in phrase.upper()) != (letter.upper() in revealed_phrase.upper()):
+                    consistent_with_guesses = False
+                    break
+            if not consistent_with_guesses:
+                continue
+
+            possible_solutions.append(phrase)
+
+        return possible_solutions
