@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-from naive_player import NaivePlayer
+from players.naive_player import NaivePlayer
 from openai import OpenAI
 import random
 from constants import *

@@ -2,8 +2,8 @@ import random
 from data.phrases import phrases
 from data.wheel_values import wheel_values
 from constants import *
-from player import Player
-from naive_player import NaivePlayer
+from players.player import Player
+from players.naive_player import NaivePlayer
 
 import time
 
