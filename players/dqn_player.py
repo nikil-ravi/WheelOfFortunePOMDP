@@ -4,6 +4,10 @@ import torch.optim as optim
 import random
 import numpy as np
 from collections import deque
+from players.player import Player
+from data.phrases import phrases
+
+MAX_PHRASE_LENGTH = max(len(phrase) for phrase in phrases)
 
 class DQNPlayer(Player):
     def __init__(self, player_id, state_size, action_size, buffer_size=10000, batch_size=64, gamma=0.99, lr=1e-3, epsilon=1.0, epsilon_decay=0.995, epsilon_min=0.1, target_update=10):
@@ -51,18 +55,13 @@ class DQNPlayer(Player):
             return phrase + "_" * (MAX_PHRASE_LENGTH - len(phrase))
         return phrase[:MAX_PHRASE_LENGTH]
 
-
     def encode_state(self, game, player_id):
         # encode revealed phrase
-        revealed = game.revealed_phrase
-        phrase_vector = []
-        for char in pad_phrase(game.revealed_phrase):
-            if char == "_":
-                phrase_vector.append(27)  # blank
-            else:
-                phrase_vector.append(ord(char) - ord("A"))
+        revealed_phrase = ''.join(game.revealed_phrase)
+        padded_phrase = self.pad_phrase(revealed_phrase)
+        phrase_vector = [26 if char == "_" else ord(char) - ord("A") for char in padded_phrase]
 
-        phrase_one_hot = np.zeros((len(game.revealed_phrase), 27))
+        phrase_one_hot = np.zeros((MAX_PHRASE_LENGTH, 27))
         for i, idx in enumerate(phrase_vector):
             phrase_one_hot[i, idx] = 1
         phrase_one_hot = phrase_one_hot.flatten()
@@ -132,10 +131,22 @@ class DQNPlayer(Player):
         if self.steps % self.target_update == 0:
             self.target_net.load_state_dict(self.policy_net.state_dict())
 
+    def spin(self, game):
+        # TODO- spin the wheel and return a reward
+        return 0
+
+    def buy_vowel(self, game):
+        # TODO- buy a vowel and return a reward
+        return 0
+
+    def solve_puzzle(self, game):
+        # TODO- solve the puzzle and return a reward
+        return 0
+
     def take_turn(self, game):
         # get current state and choose an action
-        state = self.get_state(game)
-        action = self.act(state)
+        state = self.encode_state(game, self.player_id)
+        action = self.act(game)
 
         # Perform action
         if action == 0:
@@ -148,7 +159,7 @@ class DQNPlayer(Player):
             reward = -1  # Invalid action penalty
 
         # Get next state
-        next_state = self.get_state(game)
+        next_state = self.encode_state(game, self.player_id)
         done = game.is_solved()
 
         # Remember experience
