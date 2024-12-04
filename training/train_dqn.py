@@ -63,7 +63,7 @@ def train_dqn_player(
         done = False
 
         num_turns = 0
-        while not game.is_solved() and num_turns < 10:
+        while not game.is_solved(): # and num_turns < 10:
             game.play_turn()
             num_turns += 1
             if game.is_solved():
