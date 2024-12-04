@@ -1,5 +1,7 @@
 # WheelOfFortunePOMDP
 
+Dependencies: run `pip install -r requirements.txt`
+
 To run the code and watch a player play the game `python wof.py`.
 
 To run training of the DQN agent:
