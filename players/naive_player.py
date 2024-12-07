@@ -1,4 +1,4 @@
-from player import Player
+from players.player import Player
 import random
 from constants import *
 from data.words import words
