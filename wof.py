@@ -1,14 +1,17 @@
+import pickle
 import random
 from data.phrases import phrases
+from data.words import words
 from data.wheel_values import wheel_values
 from constants import *
 from players.player import Player
 from players.naive_player import NaivePlayer
+from players.q_learning_player import QLearningPlayer
 
 import time
 
 class WheelOfFortune:
-    def __init__(self, phrases, wheel_values, num_players=2, player_class= Player):
+    def __init__(self, phrases, wheel_values, num_players=2, player_class=Player):
         self.phrases = phrases
         self.wheel_values = wheel_values
         self.players = [player_class(i) for i in range(num_players)]
@@ -27,6 +30,9 @@ class WheelOfFortune:
 
         # tracks scores for each player- this is equivalent to accumulated "money" in the game
         self.scores = [0] * len(self.players)
+
+        # Track the number of turns taken in this game
+        self.turn_count = 0
 
     def spin_wheel(self):
         outcome = random.choice(self.wheel_values)
@@ -88,8 +94,9 @@ class WheelOfFortune:
         print(f"Guessed Phrases: {', '.join(sorted(self.guessed_phrases))}")
 
     def play_turn(self):
+        self.turn_count += 1
         current_player = self.players[self.current_player]
-        print(f"-- Player {current_player.player_id + 1}'s Turn --")
+        print(f"-- Player {current_player.player_id + 1}'s Turn (Turn count: {self.turn_count}) --")
         self.display_status()
         current_player.take_turn(self)
 
@@ -106,10 +113,28 @@ class WheelOfFortune:
             #time.sleep(0.5)
         if self.is_solved():
             print("Congrats to Player {} for solving the puzzle!".format(self.current_player + 1))
-            # self.display_status()
         else:
             print("Game over.")
+        # Print the total number of turns taken
+        print(f"Total turns taken: {self.turn_count}")
 
 if __name__ == "__main__":
-    game = WheelOfFortune(phrases, wheel_values, player_class= Player)
-    game.start_game()
+    with open("q_table.pkl", "rb") as f:
+        q_table = pickle.load(f)
+
+    def q_player_factory(pid):
+        player = QLearningPlayer(pid, alpha=0.1, gamma=0.9, epsilon=0.0)  # zero epsilon for exploitation
+        player.q_table = q_table
+        return player
+
+    total_turns = 0
+    num_games = 1000
+
+    for i in range(num_games):
+        game = WheelOfFortune(words, wheel_values, num_players=1, player_class=q_player_factory)
+        game.start_game()
+        total_turns += game.turn_count
+
+    average_turns = total_turns / num_games
+    print(f"Average number of turns over {num_games} games: {average_turns}")
+
