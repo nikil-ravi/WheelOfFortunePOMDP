@@ -1,0 +1,3759 @@
+Starting training of Q-table agent...
+The word is: ASSES. Let's play!
+The word is: WRACKING. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: ______N_
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ N _
+Scores: Player 1: 600
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'D': 118, 'T': 229, 'C': 156, 'S': 234, 'G': 485, 'Q': 7, 'P': 144, 'J': 6, 'R': 255, 'M': 101, 'V': 40, 'B': 73, 'L': 215, 'W': 49, 'Y': 25, 'K': 48, 'H': 122, 'F': 60, 'Z': 13, 'X': 11})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ______N_
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ N _
+Scores: Player 1: 600
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'D': 118, 'T': 229, 'C': 156, 'S': 234, 'G': 485, 'Q': 7, 'P': 144, 'J': 6, 'R': 255, 'M': 101, 'V': 40, 'B': 73, 'L': 215, 'W': 49, 'Y': 25, 'K': 48, 'H': 122, 'F': 60, 'Z': 13, 'X': 11})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'D': 118, 'T': 229, 'C': 156, 'S': 234, 'G': 485, 'Q': 7, 'P': 144, 'J': 6, 'R': 255, 'M': 101, 'V': 40, 'B': 73, 'L': 215, 'W': 49, 'Y': 25, 'K': 48, 'H': 122, 'F': 60, 'Z': 13, 'X': 11})
+Player 1 guesses consonant: G
+G is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: ______NG
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ _ N G
+Scores: Player 1: 1200
+Guessed Letters: G, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'G'}
+Letter counts: defaultdict(<class 'int'>, {'S': 152, 'C': 118, 'P': 98, 'T': 145, 'D': 74, 'R': 170, 'M': 60, 'V': 24, 'L': 153, 'W': 45, 'Y': 18, 'B': 51, 'F': 41, 'H': 82, 'K': 39, 'Z': 8, 'X': 9, 'J': 1, 'Q': 3})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: I
+I is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _____ING
+Player 1's current score: 950
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ _ I N G
+Scores: Player 1: 950
+Guessed Letters: G, I, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'I', 'N', 'G'}
+Letter counts: defaultdict(<class 'int'>, {'S': 115, 'C': 94, 'P': 72, 'T': 105, 'D': 53, 'L': 115, 'M': 48, 'R': 130, 'W': 34, 'Y': 15, 'B': 43, 'F': 27, 'V': 13, 'H': 62, 'K': 28, 'Z': 6, 'X': 6, 'J': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: _____ING
+Player 1's current score: 950
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _ _ I N G
+Scores: Player 1: 950
+Guessed Letters: G, I, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'I', 'N', 'G'}
+Letter counts: defaultdict(<class 'int'>, {'S': 115, 'C': 94, 'P': 72, 'T': 105, 'D': 53, 'L': 115, 'M': 48, 'R': 130, 'W': 34, 'Y': 15, 'B': 43, 'F': 27, 'V': 13, 'H': 62, 'K': 28, 'Z': 6, 'X': 6, 'J': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'I', 'N', 'G'}
+Letter counts: defaultdict(<class 'int'>, {'S': 115, 'C': 94, 'P': 72, 'T': 105, 'D': 53, 'L': 115, 'M': 48, 'R': 130, 'W': 34, 'Y': 15, 'B': 43, 'F': 27, 'V': 13, 'H': 62, 'K': 28, 'Z': 6, 'X': 6, 'J': 1, 'Q': 1})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _R___ING
+Player 1's current score: 1650
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ R _ _ _ I N G
+Scores: Player 1: 1650
+Guessed Letters: G, I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'I', 'N', 'G', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 11, 'K': 7, 'B': 6, 'D': 11, 'Z': 2, 'W': 7, 'H': 4, 'C': 16, 'T': 12, 'F': 7, 'M': 5, 'P': 11, 'L': 3})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _RA__ING
+Player 1's current score: 1400
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ R A _ _ I N G
+Scores: Player 1: 1400
+Guessed Letters: A, G, I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 3, 'C': 9, 'T': 5, 'F': 2, 'M': 2, 'P': 4, 'S': 2, 'H': 2, 'L': 1, 'W': 3, 'D': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _RA__ING
+Player 1's current score: 1400
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ R A _ _ I N G
+Scores: Player 1: 1400
+Guessed Letters: A, G, I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 3, 'C': 9, 'T': 5, 'F': 2, 'M': 2, 'P': 4, 'S': 2, 'H': 2, 'L': 1, 'W': 3, 'D': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _RA__ING
+Player 1's current score: 1400
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ R A _ _ I N G
+Scores: Player 1: 1400
+Guessed Letters: A, G, I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 3, 'C': 9, 'T': 5, 'F': 2, 'M': 2, 'P': 4, 'S': 2, 'H': 2, 'L': 1, 'W': 3, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 3, 'C': 9, 'T': 5, 'F': 2, 'M': 2, 'P': 4, 'S': 2, 'H': 2, 'L': 1, 'W': 3, 'D': 1})
+Player 1 guesses consonant: C
+C is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: _RAC_ING
+Player 1's current score: 1900
+-- Player 1's Turn (Turn count: 11) --
+Phrase: _ R A C _ I N G
+Scores: Player 1: 1900
+Guessed Letters: A, C, G, I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 2, 'T': 1, 'W': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, D, F, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'K': 2, 'T': 1, 'W': 1})
+Player 1 guesses consonant: K
+K is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: _RACKING
+Player 1's current score: 2500
+-- Player 1's Turn (Turn count: 12) --
+Phrase: _ R A C K I N G
+Scores: Player 1: 2500
+Guessed Letters: A, C, G, I, K, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'K', 'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'T': 1, 'W': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _RACKING
+Player 1's current score: 2500
+-- Player 1's Turn (Turn count: 13) --
+Phrase: _ R A C K I N G
+Scores: Player 1: 2500
+Guessed Letters: A, C, G, I, K, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'K', 'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'T': 1, 'W': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _RACKING
+Player 1's current score: 2500
+-- Player 1's Turn (Turn count: 14) --
+Phrase: _ R A C K I N G
+Scores: Player 1: 2500
+Guessed Letters: A, C, G, I, K, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'K', 'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'T': 1, 'W': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, D, F, H, J, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'K', 'C', 'N', 'G', 'A', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'T': 1, 'W': 1})
+Player 1 guesses consonant: T
+T is not in the phrase.
+Reward for this action: -30
+Current game state: _RACKING
+Player 1's current score: 2500
+-- Player 1's Turn (Turn count: 15) --
+Phrase: _ R A C K I N G
+Scores: Player 1: 2500
+Guessed Letters: A, C, G, I, K, N, R, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: WRACKING
+Congratulations! Player 1 solved the puzzle!
+The phrase was: W R A C K I N G
+Reward for this action: 2000
+Current game state: WRACKING
+Player 1's current score: 2500
+Episode 1/500 completed
+The word is: ATOM. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 213, 'L': 449, 'T': 436, 'C': 250, 'D': 307, 'S': 594, 'H': 242, 'M': 260, 'N': 374, 'R': 428, 'F': 168, 'G': 196, 'Y': 154, 'J': 46, 'W': 186, 'P': 274, 'X': 23, 'Q': 5, 'K': 205, 'V': 67, 'Z': 35})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 213, 'L': 449, 'T': 436, 'C': 250, 'D': 307, 'S': 594, 'H': 242, 'M': 260, 'N': 374, 'R': 428, 'F': 168, 'G': 196, 'Y': 154, 'J': 46, 'W': 186, 'P': 274, 'X': 23, 'Q': 5, 'K': 205, 'V': 67, 'Z': 35})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 118, 'T': 256, 'D': 197, 'C': 164, 'H': 140, 'M': 160, 'N': 264, 'R': 330, 'F': 97, 'G': 102, 'Y': 97, 'J': 27, 'W': 104, 'P': 147, 'X': 15, 'Q': 5, 'V': 45, 'K': 137, 'Z': 28})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, R, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 118, 'T': 256, 'D': 197, 'C': 164, 'H': 140, 'M': 160, 'N': 264, 'R': 330, 'F': 97, 'G': 102, 'Y': 97, 'J': 27, 'W': 104, 'P': 147, 'X': 15, 'Q': 5, 'V': 45, 'K': 137, 'Z': 28})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 118, 'T': 256, 'D': 197, 'C': 164, 'H': 140, 'M': 160, 'N': 264, 'R': 330, 'F': 97, 'G': 102, 'Y': 97, 'J': 27, 'W': 104, 'P': 147, 'X': 15, 'Q': 5, 'V': 45, 'K': 137, 'Z': 28})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 55, 'T': 143, 'D': 107, 'C': 110, 'H': 97, 'M': 99, 'G': 36, 'Y': 47, 'P': 80, 'X': 11, 'Q': 5, 'V': 27, 'W': 54, 'K': 74, 'F': 54, 'Z': 22, 'J': 18})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 55, 'T': 143, 'D': 107, 'C': 110, 'H': 97, 'M': 99, 'G': 36, 'Y': 47, 'P': 80, 'X': 11, 'Q': 5, 'V': 27, 'W': 54, 'K': 74, 'F': 54, 'Z': 22, 'J': 18})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _T__
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ T _ _
+Scores: Player 1: 700
+Guessed Letters: L, N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'M': 2, 'P': 1, 'H': 1, 'C': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'M': 2, 'P': 1, 'H': 1, 'C': 1})
+Player 1 guesses consonant: M
+M is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: _T_M
+Player 1's current score: 1300
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ T _ M
+Scores: Player 1: 1300
+Guessed Letters: L, M, N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T', 'N', 'M', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: AT_M
+Player 1's current score: 1050
+-- Player 1's Turn (Turn count: 11) --
+Phrase: A T _ M
+Scores: Player 1: 1050
+Guessed Letters: A, L, M, N, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: ATOM
+Congratulations! Player 1 solved the puzzle!
+The phrase was: A T O M
+Reward for this action: 2000
+Current game state: ATOM
+Player 1's current score: 1050
+Episode 2/500 completed
+The word is: INACCURACIES. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'T': 545, 'C': 352, 'N': 541, 'G': 200, 'R': 457, 'L': 297, 'Y': 119, 'D': 211, 'M': 193, 'P': 226, 'S': 411, 'H': 156, 'K': 35, 'W': 20, 'Q': 16, 'V': 80, 'F': 78, 'B': 102, 'Z': 28, 'X': 28, 'J': 5})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'T': 545, 'C': 352, 'N': 541, 'G': 200, 'R': 457, 'L': 297, 'Y': 119, 'D': 211, 'M': 193, 'P': 226, 'S': 411, 'H': 156, 'K': 35, 'W': 20, 'Q': 16, 'V': 80, 'F': 78, 'B': 102, 'Z': 28, 'X': 28, 'J': 5})
+Player 1 guesses consonant: T
+T is not in the phrase.
+Reward for this action: -30
+Current game state: ____________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 37, 'C': 90, 'N': 125, 'M': 46, 'P': 65, 'G': 57, 'D': 65, 'S': 110, 'L': 90, 'H': 48, 'K': 15, 'W': 7, 'R': 105, 'V': 18, 'B': 38, 'F': 20, 'Q': 4, 'Z': 9, 'X': 3, 'J': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ____________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 37, 'C': 90, 'N': 125, 'M': 46, 'P': 65, 'G': 57, 'D': 65, 'S': 110, 'L': 90, 'H': 48, 'K': 15, 'W': 7, 'R': 105, 'V': 18, 'B': 38, 'F': 20, 'Q': 4, 'Z': 9, 'X': 3, 'J': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 37, 'C': 90, 'N': 125, 'M': 46, 'P': 65, 'G': 57, 'D': 65, 'S': 110, 'L': 90, 'H': 48, 'K': 15, 'W': 7, 'R': 105, 'V': 18, 'B': 38, 'F': 20, 'Q': 4, 'Z': 9, 'X': 3, 'J': 1})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: _N__________
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ N _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 1000
+Guessed Letters: N, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 4, 'C': 9, 'D': 6, 'P': 7, 'L': 15, 'S': 8, 'B': 10, 'R': 9, 'M': 3, 'G': 2, 'V': 6, 'X': 1, 'F': 3})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 4, 'C': 9, 'D': 6, 'P': 7, 'L': 15, 'S': 8, 'B': 10, 'R': 9, 'M': 3, 'G': 2, 'V': 6, 'X': 1, 'F': 3})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: _N__________
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ N _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 1000
+Guessed Letters: L, N, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'L', 'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 3, 'R': 3, 'C': 2, 'V': 2, 'D': 2, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, R, S, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: _N__________
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ N _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 1000
+Guessed Letters: L, N, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'L', 'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 3, 'R': 3, 'C': 2, 'V': 2, 'D': 2, 'P': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: U
+U is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _N___U______
+Player 1's current score: 750
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ N _ _ _ U _ _ _ _ _ _
+Scores: Player 1: 750
+Guessed Letters: L, N, T, U
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: INACCURACIES
+Congratulations! Player 1 solved the puzzle!
+The phrase was: I N A C C U R A C I E S
+Reward for this action: 2000
+Current game state: INACCURACIES
+Player 1's current score: 750
+Episode 3/500 completed
+The word is: PERTINENT. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: __R______
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ R _ _ _ _ _ _
+Scores: Player 1: 900
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 56, 'N': 94, 'L': 81, 'S': 114, 'C': 62, 'G': 66, 'B': 23, 'T': 110, 'M': 24, 'D': 55, 'F': 37, 'H': 50, 'Y': 24, 'V': 19, 'W': 9, 'Z': 2, 'K': 11, 'J': 1, 'X': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 56, 'N': 94, 'L': 81, 'S': 114, 'C': 62, 'G': 66, 'B': 23, 'T': 110, 'M': 24, 'D': 55, 'F': 37, 'H': 50, 'Y': 24, 'V': 19, 'W': 9, 'Z': 2, 'K': 11, 'J': 1, 'X': 1, 'Q': 1})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: __R______
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ R _ _ _ _ _ _
+Scores: Player 1: 900
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 25, 'N': 43, 'L': 44, 'G': 26, 'B': 12, 'T': 54, 'M': 17, 'D': 30, 'F': 25, 'H': 14, 'C': 30, 'Y': 12, 'V': 10, 'Z': 2, 'W': 3, 'J': 1, 'K': 2})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is in the phrase! It occurs 2 time(s).
+Reward for this action: 150
+Current game state: _ER___E__
+Player 1's current score: 650
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ E R _ _ _ E _ _
+Scores: Player 1: 650
+Guessed Letters: E, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 2, 'N': 2, 'T': 2, 'M': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: PERTINENT
+Congratulations! Player 1 solved the puzzle!
+The phrase was: P E R T I N E N T
+Reward for this action: 2000
+Current game state: PERTINENT
+Player 1's current score: 650
+Episode 4/500 completed
+The word is: DARING. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: __R___
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ R _ _ _
+Scores: Player 1: 900
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 42, 'D': 80, 'P': 53, 'T': 102, 'S': 123, 'C': 58, 'L': 65, 'F': 26, 'G': 49, 'N': 102, 'M': 53, 'Y': 35, 'W': 24, 'K': 19, 'H': 57, 'V': 25, 'X': 2, 'J': 6, 'Z': 3, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 42, 'D': 80, 'P': 53, 'T': 102, 'S': 123, 'C': 58, 'L': 65, 'F': 26, 'G': 49, 'N': 102, 'M': 53, 'Y': 35, 'W': 24, 'K': 19, 'H': 57, 'V': 25, 'X': 2, 'J': 6, 'Z': 3, 'Q': 1})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: __R___
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ R _ _ _
+Scores: Player 1: 900
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 35, 'D': 63, 'P': 25, 'T': 61, 'L': 54, 'F': 22, 'G': 39, 'N': 76, 'M': 44, 'Y': 26, 'W': 16, 'K': 12, 'H': 32, 'C': 34, 'V': 16, 'X': 2, 'J': 4, 'Z': 2, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: __R___
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ R _ _ _
+Scores: Player 1: 900
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 35, 'D': 63, 'P': 25, 'T': 61, 'L': 54, 'F': 22, 'G': 39, 'N': 76, 'M': 44, 'Y': 26, 'W': 16, 'K': 12, 'H': 32, 'C': 34, 'V': 16, 'X': 2, 'J': 4, 'Z': 2, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: __R___
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ R _ _ _
+Scores: Player 1: 900
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 35, 'D': 63, 'P': 25, 'T': 61, 'L': 54, 'F': 22, 'G': 39, 'N': 76, 'M': 44, 'Y': 26, 'W': 16, 'K': 12, 'H': 32, 'C': 34, 'V': 16, 'X': 2, 'J': 4, 'Z': 2, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 35, 'D': 63, 'P': 25, 'T': 61, 'L': 54, 'F': 22, 'G': 39, 'N': 76, 'M': 44, 'Y': 26, 'W': 16, 'K': 12, 'H': 32, 'C': 34, 'V': 16, 'X': 2, 'J': 4, 'Z': 2, 'Q': 1})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 900
+Current game state: __R_N_
+Player 1's current score: 1700
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ R _ N _
+Scores: Player 1: 1700
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 13, 'B': 2, 'C': 3, 'D': 2, 'F': 2, 'H': 2, 'L': 1, 'M': 2, 'P': 2, 'T': 4, 'Y': 1, 'W': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: I
+I is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: __RIN_
+Player 1's current score: 1450
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ _ R I N _
+Scores: Player 1: 1450
+Guessed Letters: I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 8, 'B': 2, 'C': 2, 'D': 2, 'F': 1, 'L': 1, 'M': 2, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: __RIN_
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ _ R I N _
+Scores: Player 1: 0
+Guessed Letters: I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 8, 'B': 2, 'C': 2, 'D': 2, 'F': 1, 'L': 1, 'M': 2, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: __RIN_
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ _ R I N _
+Scores: Player 1: 0
+Guessed Letters: I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 8, 'B': 2, 'C': 2, 'D': 2, 'F': 1, 'L': 1, 'M': 2, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 8, 'B': 2, 'C': 2, 'D': 2, 'F': 1, 'L': 1, 'M': 2, 'P': 1})
+Player 1 guesses consonant: G
+G is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: __RING
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ _ R I N G
+Scores: Player 1: 700
+Guessed Letters: G, I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'S', 'G', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'C': 2, 'D': 2, 'L': 1, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'S', 'G', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'C': 2, 'D': 2, 'L': 1, 'P': 1})
+Player 1 guesses consonant: B
+B is not in the phrase.
+Reward for this action: -30
+Current game state: __RING
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 11) --
+Phrase: _ _ R I N G
+Scores: Player 1: 700
+Guessed Letters: B, G, I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'B', 'N', 'S', 'G', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'C': 2, 'D': 2, 'L': 1, 'P': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: U
+U is not in the phrase.
+Reward for this action: -100
+Current game state: __RING
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 12) --
+Phrase: _ _ R I N G
+Scores: Player 1: 450
+Guessed Letters: B, G, I, N, R, S, U
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'B', 'N', 'S', 'G', 'R', 'I', 'U'}
+Letter counts: defaultdict(<class 'int'>, {'C': 1, 'D': 1, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: C, D, F, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'B', 'N', 'S', 'G', 'R', 'I', 'U'}
+Letter counts: defaultdict(<class 'int'>, {'C': 1, 'D': 1, 'P': 1})
+Player 1 guesses consonant: C
+C is not in the phrase.
+Reward for this action: -30
+Current game state: __RING
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 13) --
+Phrase: _ _ R I N G
+Scores: Player 1: 450
+Guessed Letters: B, C, G, I, N, R, S, U
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'B', 'C', 'N', 'S', 'G', 'R', 'I', 'U'}
+Letter counts: defaultdict(<class 'int'>, {'D': 1, 'P': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: PORING
+Incorrect solution. Player guessed: PORING
+Reward for this action: -500
+Current game state: __RING
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 14) --
+Phrase: _ _ R I N G
+Scores: Player 1: 450
+Guessed Letters: B, C, G, I, N, R, S, U
+Guessed Phrases: PORING
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: DARING
+Congratulations! Player 1 solved the puzzle!
+The phrase was: D A R I N G
+Reward for this action: 2000
+Current game state: DARING
+Player 1's current score: 450
+Episode 5/500 completed
+The word is: TOTALS. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 900
+Current game state: _____S
+Player 1's current score: 800
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 800
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 46, 'C': 90, 'T': 90, 'M': 47, 'D': 66, 'L': 141, 'N': 112, 'G': 45, 'Y': 19, 'W': 24, 'Z': 7, 'K': 29, 'P': 38, 'V': 28, 'F': 28, 'H': 73, 'J': 6, 'Q': 7, 'X': 8})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 46, 'C': 90, 'T': 90, 'M': 47, 'D': 66, 'L': 141, 'N': 112, 'G': 45, 'Y': 19, 'W': 24, 'Z': 7, 'K': 29, 'P': 38, 'V': 28, 'F': 28, 'H': 73, 'J': 6, 'Q': 7, 'X': 8})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: ____LS
+Player 1's current score: 1300
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ L S
+Scores: Player 1: 1300
+Guessed Letters: L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 6, 'G': 2, 'B': 2, 'W': 5, 'M': 5, 'C': 4, 'V': 5, 'D': 5, 'Q': 1, 'X': 2, 'F': 1, 'H': 2, 'T': 7, 'J': 1, 'P': 5, 'K': 1, 'Y': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is not in the phrase.
+Reward for this action: -100
+Current game state: ____LS
+Player 1's current score: 1050
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ L S
+Scores: Player 1: 1050
+Guessed Letters: E, L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 3, 'C': 2, 'F': 1, 'P': 1, 'T': 2, 'V': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'L', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 3, 'C': 2, 'F': 1, 'P': 1, 'T': 2, 'V': 2})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ____LS
+Player 1's current score: 1050
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _ L S
+Scores: Player 1: 1050
+Guessed Letters: E, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'S', 'E', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'P': 1, 'T': 2, 'V': 2, 'C': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: ___ALS
+Player 1's current score: 800
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ _ _ A L S
+Scores: Player 1: 800
+Guessed Letters: A, E, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'S', 'A', 'E', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'T': 2, 'V': 2, 'C': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: O
+O is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _O_ALS
+Player 1's current score: 550
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ O _ A L S
+Scores: Player 1: 550
+Guessed Letters: A, E, L, N, O, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'O', 'N', 'S', 'A', 'E', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'T': 1, 'V': 1, 'C': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: TOTALS
+Congratulations! Player 1 solved the puzzle!
+The phrase was: T O T A L S
+Reward for this action: 2000
+Current game state: TOTALS
+Player 1's current score: 550
+Episode 6/500 completed
+The word is: LANDMARK. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: __N_____
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ N _ _ _ _ _
+Scores: Player 1: 1000
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'L': 57, 'B': 18, 'M': 52, 'R': 92, 'T': 74, 'C': 69, 'Y': 29, 'S': 107, 'G': 34, 'D': 67, 'H': 32, 'K': 12, 'P': 23, 'F': 25, 'W': 11, 'V': 19, 'J': 6, 'Q': 3, 'Z': 3, 'X': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is not in the phrase.
+Reward for this action: -100
+Current game state: __N_____
+Player 1's current score: 750
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ N _ _ _ _ _
+Scores: Player 1: 750
+Guessed Letters: E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'L': 29, 'B': 9, 'M': 21, 'R': 31, 'T': 33, 'C': 28, 'Y': 20, 'K': 8, 'P': 7, 'G': 11, 'W': 6, 'S': 37, 'D': 23, 'F': 11, 'J': 3, 'H': 14, 'V': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: __N_____
+Player 1's current score: 750
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ N _ _ _ _ _
+Scores: Player 1: 750
+Guessed Letters: E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'L': 29, 'B': 9, 'M': 21, 'R': 31, 'T': 33, 'C': 28, 'Y': 20, 'K': 8, 'P': 7, 'G': 11, 'W': 6, 'S': 37, 'D': 23, 'F': 11, 'J': 3, 'H': 14, 'V': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 2 time(s).
+Reward for this action: 150
+Current game state: _AN__A__
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ A N _ _ A _ _
+Scores: Player 1: 500
+Guessed Letters: A, E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'D': 6, 'S': 2, 'G': 1, 'H': 3, 'L': 5, 'R': 3, 'F': 1, 'Y': 2, 'K': 1, 'M': 1, 'T': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'D': 6, 'S': 2, 'G': 1, 'H': 3, 'L': 5, 'R': 3, 'F': 1, 'Y': 2, 'K': 1, 'M': 1, 'T': 1})
+Player 1 guesses consonant: D
+D is in the phrase! It occurs 1 time(s).
+Reward for this action: 900
+Current game state: _AND_A__
+Player 1's current score: 1300
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ A N D _ A _ _
+Scores: Player 1: 1300
+Guessed Letters: A, D, E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1, 'G': 1, 'B': 2, 'H': 3, 'L': 4, 'R': 2, 'F': 1, 'K': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: _AND_A__
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ A N D _ A _ _
+Scores: Player 1: 0
+Guessed Letters: A, D, E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1, 'G': 1, 'B': 2, 'H': 3, 'L': 4, 'R': 2, 'F': 1, 'K': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: _AND_A__
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ A N D _ A _ _
+Scores: Player 1: 0
+Guessed Letters: A, D, E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1, 'G': 1, 'B': 2, 'H': 3, 'L': 4, 'R': 2, 'F': 1, 'K': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1, 'G': 1, 'B': 2, 'H': 3, 'L': 4, 'R': 2, 'F': 1, 'K': 1, 'M': 1})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: LAND_A__
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 9) --
+Phrase: L A N D _ A _ _
+Scores: Player 1: 500
+Guessed Letters: A, D, E, L, N
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: LANDMARK
+Congratulations! Player 1 solved the puzzle!
+The phrase was: L A N D M A R K
+Reward for this action: 2000
+Current game state: LANDMARK
+Player 1's current score: 500
+Episode 7/500 completed
+The word is: AMNIOTIC. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: __N_____
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ N _ _ _ _ _
+Scores: Player 1: 1000
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'L': 57, 'B': 18, 'M': 52, 'R': 92, 'T': 74, 'C': 69, 'Y': 29, 'S': 107, 'G': 34, 'D': 67, 'H': 32, 'K': 12, 'P': 23, 'F': 25, 'W': 11, 'V': 19, 'J': 6, 'Q': 3, 'Z': 3, 'X': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is not in the phrase.
+Reward for this action: -100
+Current game state: __N_____
+Player 1's current score: 750
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ N _ _ _ _ _
+Scores: Player 1: 750
+Guessed Letters: E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'L': 29, 'B': 9, 'M': 21, 'R': 31, 'T': 33, 'C': 28, 'Y': 20, 'K': 8, 'P': 7, 'G': 11, 'W': 6, 'S': 37, 'D': 23, 'F': 11, 'J': 3, 'H': 14, 'V': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: A_N_____
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 6) --
+Phrase: A _ N _ _ _ _ _
+Scores: Player 1: 500
+Guessed Letters: A, E, N
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: AMNIOTIC
+Congratulations! Player 1 solved the puzzle!
+The phrase was: A M N I O T I C
+Reward for this action: 2000
+Current game state: AMNIOTIC
+Player 1's current score: 500
+Episode 8/500 completed
+The word is: FOSSILIZED. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: __________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'V': 114, 'R': 506, 'B': 145, 'D': 241, 'Y': 133, 'T': 462, 'S': 473, 'L': 350, 'C': 332, 'P': 273, 'M': 184, 'H': 204, 'Q': 8, 'J': 10, 'F': 78, 'W': 48, 'G': 105, 'Z': 28, 'K': 52, 'X': 13})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'V': 114, 'R': 506, 'B': 145, 'D': 241, 'Y': 133, 'T': 462, 'S': 473, 'L': 350, 'C': 332, 'P': 273, 'M': 184, 'H': 204, 'Q': 8, 'J': 10, 'F': 78, 'W': 48, 'G': 105, 'Z': 28, 'K': 52, 'X': 13})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: __________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 51, 'B': 49, 'T': 154, 'S': 163, 'L': 169, 'C': 128, 'P': 94, 'M': 76, 'D': 70, 'H': 70, 'V': 36, 'Q': 5, 'J': 5, 'F': 23, 'G': 29, 'Z': 14, 'K': 11, 'X': 7, 'W': 8})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'Y': 51, 'B': 49, 'T': 154, 'S': 163, 'L': 169, 'C': 128, 'P': 94, 'M': 76, 'D': 70, 'H': 70, 'V': 36, 'Q': 5, 'J': 5, 'F': 23, 'G': 29, 'Z': 14, 'K': 11, 'X': 7, 'W': 8})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _____L____
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ L _ _ _ _
+Scores: Player 1: 700
+Guessed Letters: L, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'L', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 4, 'Y': 3, 'S': 11, 'C': 6, 'T': 7, 'H': 2, 'V': 1, 'M': 3, 'D': 5, 'Z': 4, 'F': 1, 'B': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'L', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 4, 'Y': 3, 'S': 11, 'C': 6, 'T': 7, 'H': 2, 'V': 1, 'M': 3, 'D': 5, 'Z': 4, 'F': 1, 'B': 2})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 2 time(s).
+Reward for this action: 2200
+Current game state: __SS_L____
+Player 1's current score: 2700
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ S S _ L _ _ _ _
+Scores: Player 1: 2700
+Guessed Letters: L, N, R, S
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: FOSSILIZED
+Congratulations! Player 1 solved the puzzle!
+The phrase was: F O S S I L I Z E D
+Reward for this action: 2000
+Current game state: FOSSILIZED
+Player 1's current score: 2700
+Episode 9/500 completed
+The word is: CHAMPS. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _____S
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 700
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 46, 'C': 90, 'T': 90, 'M': 47, 'D': 66, 'L': 141, 'N': 112, 'G': 45, 'Y': 19, 'W': 24, 'Z': 7, 'K': 29, 'P': 38, 'V': 28, 'F': 28, 'H': 73, 'J': 6, 'Q': 7, 'X': 8})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is not in the phrase.
+Reward for this action: -100
+Current game state: _____S
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 450
+Guessed Letters: E, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 23, 'C': 51, 'T': 57, 'M': 28, 'D': 25, 'L': 54, 'W': 11, 'Y': 9, 'G': 20, 'N': 61, 'V': 6, 'K': 18, 'F': 14, 'H': 42, 'P': 22, 'Z': 3, 'J': 2, 'Q': 4, 'X': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 23, 'C': 51, 'T': 57, 'M': 28, 'D': 25, 'L': 54, 'W': 11, 'Y': 9, 'G': 20, 'N': 61, 'V': 6, 'K': 18, 'F': 14, 'H': 42, 'P': 22, 'Z': 3, 'J': 2, 'Q': 4, 'X': 1})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: _____S
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 450
+Guessed Letters: E, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 16, 'C': 34, 'T': 34, 'M': 22, 'D': 14, 'L': 39, 'W': 8, 'Y': 6, 'G': 10, 'V': 5, 'K': 10, 'F': 11, 'H': 28, 'P': 15, 'Z': 3, 'J': 1, 'Q': 3})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: I
+I is not in the phrase.
+Reward for this action: -100
+Current game state: _____S
+Player 1's current score: 200
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 200
+Guessed Letters: E, I, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'S', 'E', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 12, 'C': 22, 'T': 16, 'L': 23, 'D': 6, 'M': 14, 'W': 6, 'Y': 6, 'K': 6, 'F': 6, 'H': 15, 'P': 8, 'G': 2, 'J': 1, 'Q': 2, 'V': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'S', 'E', 'R', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 12, 'C': 22, 'T': 16, 'L': 23, 'D': 6, 'M': 14, 'W': 6, 'Y': 6, 'K': 6, 'F': 6, 'H': 15, 'P': 8, 'G': 2, 'J': 1, 'Q': 2, 'V': 1, 'Z': 1})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: _____S
+Player 1's current score: 200
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ _ _ _ _ S
+Scores: Player 1: 200
+Guessed Letters: E, I, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'S', 'E', 'R', 'L', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 5, 'C': 14, 'T': 10, 'H': 13, 'P': 7, 'M': 10, 'K': 3, 'G': 1, 'F': 2, 'D': 2, 'Y': 3, 'J': 1, 'W': 3, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'S', 'E', 'R', 'L', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'B': 5, 'C': 14, 'T': 10, 'H': 13, 'P': 7, 'M': 10, 'K': 3, 'G': 1, 'F': 2, 'D': 2, 'Y': 3, 'J': 1, 'W': 3, 'Q': 1})
+Player 1 guesses consonant: C
+C is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: C____S
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 8) --
+Phrase: C _ _ _ _ S
+Scores: Player 1: 1200
+Guessed Letters: C, E, I, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'C', 'N', 'S', 'E', 'R', 'L', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'P': 4, 'M': 4, 'H': 3, 'G': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: C_A__S
+Player 1's current score: 950
+-- Player 1's Turn (Turn count: 9) --
+Phrase: C _ A _ _ S
+Scores: Player 1: 950
+Guessed Letters: A, C, E, I, L, N, R, S
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: CHAMPS
+Congratulations! Player 1 solved the puzzle!
+The phrase was: C H A M P S
+Reward for this action: 2000
+Current game state: CHAMPS
+Player 1's current score: 950
+Episode 10/500 completed
+The word is: PATHETIC. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'K': 148, 'R': 1114, 'V': 205, 'D': 625, 'B': 319, 'T': 876, 'C': 620, 'S': 1038, 'Y': 233, 'P': 434, 'L': 752, 'M': 386, 'H': 383, 'Q': 30, 'J': 17, 'F': 208, 'G': 186, 'W': 145, 'Z': 27, 'X': 44})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'K': 148, 'R': 1114, 'V': 205, 'D': 625, 'B': 319, 'T': 876, 'C': 620, 'S': 1038, 'Y': 233, 'P': 434, 'L': 752, 'M': 386, 'H': 383, 'Q': 30, 'J': 17, 'F': 208, 'G': 186, 'W': 145, 'Z': 27, 'X': 44})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 263, 'B': 153, 'T': 365, 'C': 262, 'S': 441, 'L': 403, 'V': 68, 'M': 166, 'P': 154, 'H': 182, 'Y': 118, 'Q': 18, 'J': 9, 'F': 81, 'G': 84, 'K': 75, 'Z': 14, 'W': 57, 'X': 23})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 263, 'B': 153, 'T': 365, 'C': 262, 'S': 441, 'L': 403, 'V': 68, 'M': 166, 'P': 154, 'H': 182, 'Y': 118, 'Q': 18, 'J': 9, 'F': 81, 'G': 84, 'K': 75, 'Z': 14, 'W': 57, 'X': 23})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 263, 'B': 153, 'T': 365, 'C': 262, 'S': 441, 'L': 403, 'V': 68, 'M': 166, 'P': 154, 'H': 182, 'Y': 118, 'Q': 18, 'J': 9, 'F': 81, 'G': 84, 'K': 75, 'Z': 14, 'W': 57, 'X': 23})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 129, 'B': 65, 'T': 159, 'C': 116, 'M': 76, 'P': 53, 'V': 36, 'H': 60, 'Y': 51, 'L': 163, 'Q': 4, 'F': 41, 'G': 30, 'K': 28, 'Z': 8, 'W': 22, 'X': 14, 'J': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 129, 'B': 65, 'T': 159, 'C': 116, 'M': 76, 'P': 53, 'V': 36, 'H': 60, 'Y': 51, 'L': 163, 'Q': 4, 'F': 41, 'G': 30, 'K': 28, 'Z': 8, 'W': 22, 'X': 14, 'J': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 129, 'B': 65, 'T': 159, 'C': 116, 'M': 76, 'P': 53, 'V': 36, 'H': 60, 'Y': 51, 'L': 163, 'Q': 4, 'F': 41, 'G': 30, 'K': 28, 'Z': 8, 'W': 22, 'X': 14, 'J': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 129, 'B': 65, 'T': 159, 'C': 116, 'M': 76, 'P': 53, 'V': 36, 'H': 60, 'Y': 51, 'L': 163, 'Q': 4, 'F': 41, 'G': 30, 'K': 28, 'Z': 8, 'W': 22, 'X': 14, 'J': 2})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 72, 'B': 23, 'T': 72, 'C': 62, 'M': 33, 'P': 26, 'V': 14, 'H': 27, 'Y': 12, 'Q': 3, 'F': 11, 'G': 9, 'K': 15, 'Z': 4, 'W': 7, 'X': 8, 'J': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 72, 'B': 23, 'T': 72, 'C': 62, 'M': 33, 'P': 26, 'V': 14, 'H': 27, 'Y': 12, 'Q': 3, 'F': 11, 'G': 9, 'K': 15, 'Z': 4, 'W': 7, 'X': 8, 'J': 1})
+Player 1 guesses consonant: D
+D is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: D, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'V': 6, 'T': 23, 'C': 21, 'Y': 6, 'P': 11, 'M': 11, 'K': 10, 'B': 10, 'F': 4, 'G': 6, 'H': 15, 'Q': 1, 'Z': 2, 'W': 4, 'X': 3})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: D, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'V': 6, 'T': 23, 'C': 21, 'Y': 6, 'P': 11, 'M': 11, 'K': 10, 'B': 10, 'F': 4, 'G': 6, 'H': 15, 'Q': 1, 'Z': 2, 'W': 4, 'X': 3})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'V': 6, 'T': 23, 'C': 21, 'Y': 6, 'P': 11, 'M': 11, 'K': 10, 'B': 10, 'F': 4, 'G': 6, 'H': 15, 'Q': 1, 'Z': 2, 'W': 4, 'X': 3})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 2 time(s).
+Reward for this action: 2000
+Current game state: __T__T__
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 11) --
+Phrase: _ _ T _ _ T _ _
+Scores: Player 1: 1800
+Guessed Letters: D, L, N, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: PATHETIC
+Congratulations! Player 1 solved the puzzle!
+The phrase was: P A T H E T I C
+Reward for this action: 2000
+Current game state: PATHETIC
+Player 1's current score: 1800
+Episode 11/500 completed
+The word is: ALDERMAN. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: _______N
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ N
+Scores: Player 1: 500
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'B': 11, 'T': 73, 'R': 69, 'D': 29, 'P': 24, 'L': 37, 'M': 37, 'S': 51, 'V': 13, 'G': 25, 'Y': 6, 'H': 33, 'C': 40, 'J': 2, 'Q': 3, 'X': 3, 'W': 11, 'F': 15, 'K': 7, 'Z': 2})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: I
+I is not in the phrase.
+Reward for this action: -100
+Current game state: _______N
+Player 1's current score: 250
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ N
+Scores: Player 1: 250
+Guessed Letters: I, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'L': 11, 'R': 29, 'M': 19, 'D': 12, 'G': 8, 'Y': 4, 'B': 4, 'H': 18, 'T': 19, 'C': 7, 'P': 5, 'S': 21, 'V': 2, 'W': 10, 'F': 6, 'K': 4, 'X': 1, 'Q': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'I'}
+Letter counts: defaultdict(<class 'int'>, {'L': 11, 'R': 29, 'M': 19, 'D': 12, 'G': 8, 'Y': 4, 'B': 4, 'H': 18, 'T': 19, 'C': 7, 'P': 5, 'S': 21, 'V': 2, 'W': 10, 'F': 6, 'K': 4, 'X': 1, 'Q': 1})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: ____R__N
+Player 1's current score: 1150
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ R _ _ N
+Scores: Player 1: 1150
+Guessed Letters: I, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'M': 2, 'D': 1, 'G': 1, 'W': 1, 'T': 1, 'S': 2, 'B': 1, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'I', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'M': 2, 'D': 1, 'G': 1, 'W': 1, 'T': 1, 'S': 2, 'B': 1, 'P': 1})
+Player 1 guesses consonant: M
+M is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: ____RM_N
+Player 1's current score: 2150
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ R M _ N
+Scores: Player 1: 2150
+Guessed Letters: I, M, N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'I', 'M', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'D': 1, 'S': 1, 'P': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'I', 'M', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'D': 1, 'S': 1, 'P': 1})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _L__RM_N
+Player 1's current score: 2850
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ L _ _ R M _ N
+Scores: Player 1: 2850
+Guessed Letters: I, L, M, N, R
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: ALDERMAN
+Congratulations! Player 1 solved the puzzle!
+The phrase was: A L D E R M A N
+Reward for this action: 2000
+Current game state: ALDERMAN
+Player 1's current score: 2850
+Episode 12/500 completed
+The word is: HEATS. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 352, 'H': 479, 'R': 981, 'K': 352, 'B': 339, 'C': 558, 'Y': 461, 'T': 822, 'D': 582, 'V': 171, 'S': 1371, 'N': 691, 'P': 475, 'M': 410, 'L': 772, 'F': 266, 'W': 256, 'Z': 46, 'X': 52, 'J': 47, 'Q': 24})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 352, 'H': 479, 'R': 981, 'K': 352, 'B': 339, 'C': 558, 'Y': 461, 'T': 822, 'D': 582, 'V': 171, 'S': 1371, 'N': 691, 'P': 475, 'M': 410, 'L': 772, 'F': 266, 'W': 256, 'Z': 46, 'X': 52, 'J': 47, 'Q': 24})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: ____S
+Player 1's current score: 1000
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ S
+Scores: Player 1: 1000
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'H': 69, 'C': 100, 'D': 107, 'R': 168, 'L': 165, 'T': 146, 'N': 136, 'B': 83, 'K': 98, 'G': 60, 'M': 102, 'F': 64, 'P': 106, 'W': 55, 'X': 16, 'Z': 4, 'Y': 17, 'V': 28, 'J': 11, 'Q': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _E__S
+Player 1's current score: 750
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ E _ _ S
+Scores: Player 1: 750
+Guessed Letters: E, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 12, 'D': 14, 'M': 12, 'N': 19, 'R': 21, 'T': 25, 'K': 8, 'C': 6, 'L': 23, 'F': 6, 'G': 4, 'H': 11, 'P': 9, 'J': 2, 'W': 4, 'X': 3, 'V': 4, 'Y': 2, 'Z': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 12, 'D': 14, 'M': 12, 'N': 19, 'R': 21, 'T': 25, 'K': 8, 'C': 6, 'L': 23, 'F': 6, 'G': 4, 'H': 11, 'P': 9, 'J': 2, 'W': 4, 'X': 3, 'V': 4, 'Y': 2, 'Z': 1})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: _E_TS
+Player 1's current score: 1450
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ E _ T S
+Scores: Player 1: 1450
+Guessed Letters: E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 3, 'L': 5, 'N': 5, 'C': 1, 'D': 2, 'F': 2, 'G': 1, 'H': 1, 'M': 2, 'P': 1, 'R': 1, 'V': 1, 'W': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'F': 1, 'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'F': 1, 'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'F': 1, 'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 couldn't choose a vowel.
+Reward for this action: -20
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'F': 1, 'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'A', 'T', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'F': 1, 'H': 1, 'M': 1})
+Player 1 guesses consonant: B
+B is not in the phrase.
+Reward for this action: -30
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, B, E, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'B', 'T', 'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'F': 1, 'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: C, D, F, G, H, J, K, L, M, N, P, Q, R, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'B', 'T', 'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'F': 1, 'H': 1, 'M': 1})
+Player 1 guesses consonant: F
+F is not in the phrase.
+Reward for this action: -30
+Current game state: _EATS
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ E A T S
+Scores: Player 1: 1200
+Guessed Letters: A, B, E, F, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'B', 'T', 'F', 'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: C, D, G, H, J, K, L, M, N, P, Q, R, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'B', 'T', 'F', 'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1, 'M': 1})
+Player 1 guesses consonant: H
+H is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: HEATS
+Player 1's current score: 1700
+Episode 13/500 completed
+The word is: SLAMMER. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1757, 'B': 553, 'D': 1210, 'M': 685, 'T': 1581, 'G': 1058, 'L': 1320, 'Y': 425, 'S': 2059, 'H': 700, 'R': 2011, 'C': 1063, 'V': 273, 'P': 819, 'Q': 53, 'J': 68, 'F': 431, 'W': 336, 'Z': 52, 'X': 75, 'K': 348})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1757, 'B': 553, 'D': 1210, 'M': 685, 'T': 1581, 'G': 1058, 'L': 1320, 'Y': 425, 'S': 2059, 'H': 700, 'R': 2011, 'C': 1063, 'V': 273, 'P': 819, 'Q': 53, 'J': 68, 'F': 431, 'W': 336, 'Z': 52, 'X': 75, 'K': 348})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: S______
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 2) --
+Phrase: S _ _ _ _ _ _
+Scores: Player 1: 700
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'H': 69, 'B': 32, 'T': 160, 'L': 122, 'D': 140, 'N': 168, 'R': 179, 'F': 25, 'G': 99, 'Y': 40, 'V': 20, 'P': 100, 'M': 68, 'C': 93, 'X': 5, 'K': 49, 'W': 34, 'Z': 9, 'Q': 4, 'J': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: S______
+Player 1's current score: 700
+-- Player 1's Turn (Turn count: 3) --
+Phrase: S _ _ _ _ _ _
+Scores: Player 1: 700
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'H': 69, 'B': 32, 'T': 160, 'L': 122, 'D': 140, 'N': 168, 'R': 179, 'F': 25, 'G': 99, 'Y': 40, 'V': 20, 'P': 100, 'M': 68, 'C': 93, 'X': 5, 'K': 49, 'W': 34, 'Z': 9, 'Q': 4, 'J': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: S____E_
+Player 1's current score: 450
+-- Player 1's Turn (Turn count: 4) --
+Phrase: S _ _ _ _ E _
+Scores: Player 1: 450
+Guessed Letters: E, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'L': 44, 'D': 88, 'T': 66, 'P': 48, 'M': 28, 'H': 23, 'C': 28, 'V': 3, 'R': 71, 'N': 32, 'F': 10, 'G': 9, 'K': 23, 'B': 5, 'W': 7, 'X': 1, 'Y': 2, 'Q': 1})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: A
+A is in the phrase! It occurs 1 time(s).
+Reward for this action: -50
+Current game state: S_A__E_
+Player 1's current score: 200
+-- Player 1's Turn (Turn count: 5) --
+Phrase: S _ A _ _ E _
+Scores: Player 1: 200
+Guessed Letters: A, E, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'P': 18, 'C': 13, 'L': 18, 'D': 30, 'R': 25, 'M': 9, 'N': 12, 'T': 24, 'H': 4, 'F': 3, 'G': 3, 'K': 7, 'X': 1, 'W': 3, 'B': 1, 'V': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'A', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'P': 18, 'C': 13, 'L': 18, 'D': 30, 'R': 25, 'M': 9, 'N': 12, 'T': 24, 'H': 4, 'F': 3, 'G': 3, 'K': 7, 'X': 1, 'W': 3, 'B': 1, 'V': 1})
+Player 1 guesses consonant: D
+D is not in the phrase.
+Reward for this action: -30
+Current game state: S_A__E_
+Player 1's current score: 200
+-- Player 1's Turn (Turn count: 6) --
+Phrase: S _ A _ _ E _
+Scores: Player 1: 200
+Guessed Letters: A, D, E, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'P': 7, 'L': 10, 'C': 7, 'R': 19, 'N': 3, 'T': 11, 'H': 2, 'K': 2, 'M': 4, 'F': 1, 'G': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: S_A__E_
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 7) --
+Phrase: S _ A _ _ E _
+Scores: Player 1: 0
+Guessed Letters: A, D, E, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'P': 7, 'L': 10, 'C': 7, 'R': 19, 'N': 3, 'T': 11, 'H': 2, 'K': 2, 'M': 4, 'F': 1, 'G': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'A', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'P': 7, 'L': 10, 'C': 7, 'R': 19, 'N': 3, 'T': 11, 'H': 2, 'K': 2, 'M': 4, 'F': 1, 'G': 1})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: S_A__ER
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 8) --
+Phrase: S _ A _ _ E R
+Scores: Player 1: 900
+Guessed Letters: A, D, E, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'D', 'S', 'A', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 4, 'L': 6, 'C': 4, 'N': 2, 'T': 7, 'H': 1, 'K': 2, 'M': 3, 'F': 1, 'G': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'D', 'S', 'A', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 4, 'L': 6, 'C': 4, 'N': 2, 'T': 7, 'H': 1, 'K': 2, 'M': 3, 'F': 1, 'G': 1})
+Player 1 guesses consonant: T
+T is not in the phrase.
+Reward for this action: -30
+Current game state: S_A__ER
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 9) --
+Phrase: S _ A _ _ E R
+Scores: Player 1: 900
+Guessed Letters: A, D, E, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T', 'D', 'S', 'A', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 2, 'L': 4, 'C': 3, 'N': 2, 'K': 1, 'M': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, F, G, H, J, K, L, M, N, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T', 'D', 'S', 'A', 'E', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'P': 2, 'L': 4, 'C': 3, 'N': 2, 'K': 1, 'M': 2})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: SLA__ER
+Player 1's current score: 1900
+-- Player 1's Turn (Turn count: 10) --
+Phrase: S L A _ _ E R
+Scores: Player 1: 1900
+Guessed Letters: A, D, E, L, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T', 'D', 'S', 'A', 'E', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'K': 1, 'C': 1, 'M': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, F, G, H, J, K, M, N, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T', 'D', 'S', 'A', 'E', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'K': 1, 'C': 1, 'M': 1})
+Player 1 guesses consonant: K
+K is not in the phrase.
+Reward for this action: -30
+Current game state: SLA__ER
+Player 1's current score: 1900
+-- Player 1's Turn (Turn count: 11) --
+Phrase: S L A _ _ E R
+Scores: Player 1: 1900
+Guessed Letters: A, D, E, K, L, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: SLAMMER
+Congratulations! Player 1 solved the puzzle!
+The phrase was: S L A M M E R
+Reward for this action: 2000
+Current game state: SLAMMER
+Player 1's current score: 1900
+Episode 14/500 completed
+The word is: INTENSIVE. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: _________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 802, 'B': 177, 'D': 453, 'M': 319, 'L': 590, 'T': 714, 'C': 521, 'G': 339, 'S': 722, 'P': 267, 'Y': 130, 'V': 129, 'H': 256, 'Q': 27, 'J': 26, 'F': 130, 'Z': 29, 'W': 70, 'X': 45, 'K': 85})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 802, 'B': 177, 'D': 453, 'M': 319, 'L': 590, 'T': 714, 'C': 521, 'G': 339, 'S': 722, 'P': 267, 'Y': 130, 'V': 129, 'H': 256, 'Q': 27, 'J': 26, 'F': 130, 'Z': 29, 'W': 70, 'X': 45, 'K': 85})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 2 time(s).
+Reward for this action: 1800
+Current game state: _N__N____
+Player 1's current score: 1600
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ N _ _ N _ _ _ _
+Scores: Player 1: 1600
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'V': 3, 'T': 7, 'C': 1, 'L': 3, 'F': 1, 'S': 4, 'G': 1, 'Y': 2, 'B': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: _N__N____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ N _ _ N _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'V': 3, 'T': 7, 'C': 1, 'L': 3, 'F': 1, 'S': 4, 'G': 1, 'Y': 2, 'B': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'V': 3, 'T': 7, 'C': 1, 'L': 3, 'F': 1, 'S': 4, 'G': 1, 'Y': 2, 'B': 1})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: _NT_N____
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ N T _ N _ _ _ _
+Scores: Player 1: 900
+Guessed Letters: N, R, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'Y': 1, 'L': 2, 'V': 1, 'B': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'Y': 1, 'L': 2, 'V': 1, 'B': 1})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: _NT_NS___
+Player 1's current score: 1400
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ N T _ N S _ _ _
+Scores: Player 1: 1400
+Guessed Letters: N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'Y': 1, 'V': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1, 'Y': 1, 'V': 1})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: _NT_NS___
+Player 1's current score: 1400
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ N T _ N S _ _ _
+Scores: Player 1: 1400
+Guessed Letters: L, N, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: INTENSIVE
+Congratulations! Player 1 solved the puzzle!
+The phrase was: I N T E N S I V E
+Reward for this action: 2000
+Current game state: INTENSIVE
+Player 1's current score: 1400
+Episode 15/500 completed
+The word is: RECOGNIZES. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: __________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: _____N____
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ N _ _ _ _
+Scores: Player 1: 600
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'L': 26, 'B': 8, 'M': 25, 'T': 35, 'C': 23, 'S': 37, 'R': 41, 'P': 15, 'Y': 13, 'D': 22, 'Q': 1, 'G': 15, 'H': 8, 'F': 1, 'Z': 4, 'V': 4, 'K': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'L': 26, 'B': 8, 'M': 25, 'T': 35, 'C': 23, 'S': 37, 'R': 41, 'P': 15, 'Y': 13, 'D': 22, 'Q': 1, 'G': 15, 'H': 8, 'F': 1, 'Z': 4, 'V': 4, 'K': 1})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 1 time(s).
+Reward for this action: 800
+Current game state: R____N____
+Player 1's current score: 1300
+-- Player 1's Turn (Turn count: 4) --
+Phrase: R _ _ _ _ N _ _ _ _
+Scores: Player 1: 1300
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 3, 'Y': 2, 'T': 1, 'S': 6, 'B': 2, 'D': 2, 'G': 4, 'C': 4, 'Z': 2, 'V': 1, 'P': 1, 'K': 1, 'H': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 3, 'Y': 2, 'T': 1, 'S': 6, 'B': 2, 'D': 2, 'G': 4, 'C': 4, 'Z': 2, 'V': 1, 'P': 1, 'K': 1, 'H': 1})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: R____N___S
+Player 1's current score: 2300
+-- Player 1's Turn (Turn count: 5) --
+Phrase: R _ _ _ _ N _ _ _ S
+Scores: Player 1: 2300
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 2, 'Z': 1, 'C': 2, 'K': 1, 'H': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: RECOGNIZES
+Congratulations! Player 1 solved the puzzle!
+The phrase was: R E C O G N I Z E S
+Reward for this action: 2000
+Current game state: RECOGNIZES
+Player 1's current score: 2300
+Episode 16/500 completed
+The word is: GLAZED. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'S': 1707, 'B': 509, 'C': 836, 'T': 1253, 'D': 1108, 'L': 1187, 'Z': 83, 'R': 1773, 'N': 1252, 'P': 654, 'G': 645, 'H': 634, 'V': 252, 'J': 62, 'M': 637, 'F': 330, 'Y': 542, 'W': 315, 'K': 358, 'Q': 42, 'X': 59})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 1046, 'B': 288, 'C': 508, 'T': 744, 'D': 721, 'L': 876, 'Z': 52, 'N': 845, 'P': 394, 'H': 399, 'G': 401, 'V': 134, 'J': 40, 'M': 403, 'F': 176, 'Y': 336, 'K': 230, 'W': 185, 'Q': 30, 'X': 43})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 482, 'B': 195, 'T': 395, 'C': 295, 'L': 519, 'Z': 32, 'N': 545, 'P': 234, 'H': 186, 'G': 285, 'V': 73, 'F': 114, 'Y': 200, 'M': 248, 'W': 107, 'K': 127, 'X': 26, 'Q': 12, 'J': 30})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 482, 'B': 195, 'T': 395, 'C': 295, 'L': 519, 'Z': 32, 'N': 545, 'P': 234, 'H': 186, 'G': 285, 'V': 73, 'F': 114, 'Y': 200, 'M': 248, 'W': 107, 'K': 127, 'X': 26, 'Q': 12, 'J': 30})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 329, 'B': 136, 'T': 238, 'C': 198, 'L': 369, 'Z': 23, 'P': 161, 'V': 38, 'F': 78, 'G': 105, 'H': 131, 'M': 149, 'Y': 124, 'K': 78, 'W': 64, 'Q': 9, 'X': 16, 'J': 22})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ______
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 329, 'B': 136, 'T': 238, 'C': 198, 'L': 369, 'Z': 23, 'P': 161, 'V': 38, 'F': 78, 'G': 105, 'H': 131, 'M': 149, 'Y': 124, 'K': 78, 'W': 64, 'Q': 9, 'X': 16, 'J': 22})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'D': 329, 'B': 136, 'T': 238, 'C': 198, 'L': 369, 'Z': 23, 'P': 161, 'V': 38, 'F': 78, 'G': 105, 'H': 131, 'M': 149, 'Y': 124, 'K': 78, 'W': 64, 'Q': 9, 'X': 16, 'J': 22})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 900
+Current game state: _L____
+Player 1's current score: 800
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ L _ _ _ _
+Scores: Player 1: 800
+Guessed Letters: L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'V': 2, 'C': 17, 'G': 9, 'H': 9, 'T': 12, 'B': 9, 'M': 5, 'D': 18, 'Y': 13, 'W': 5, 'P': 13, 'X': 1, 'Q': 2, 'K': 3, 'F': 9, 'Z': 3})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'V': 2, 'C': 17, 'G': 9, 'H': 9, 'T': 12, 'B': 9, 'M': 5, 'D': 18, 'Y': 13, 'W': 5, 'P': 13, 'X': 1, 'Q': 2, 'K': 3, 'F': 9, 'Z': 3})
+Player 1 guesses consonant: D
+D is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: _L___D
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ L _ _ _ D
+Scores: Player 1: 1800
+Guessed Letters: D, L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'M': 1, 'W': 4, 'C': 3, 'T': 2, 'P': 6, 'K': 1, 'F': 3, 'Y': 2, 'G': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'M': 1, 'W': 4, 'C': 3, 'T': 2, 'P': 6, 'K': 1, 'F': 3, 'Y': 2, 'G': 1, 'Z': 1})
+Player 1 guesses consonant: P
+P is not in the phrase.
+Reward for this action: -30
+Current game state: _L___D
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ L _ _ _ D
+Scores: Player 1: 1800
+Guessed Letters: D, L, N, P, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'M': 1, 'W': 3, 'C': 1, 'T': 1, 'K': 1, 'F': 3, 'Y': 1, 'G': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, F, G, H, J, K, M, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 2, 'M': 1, 'W': 3, 'C': 1, 'T': 1, 'K': 1, 'F': 3, 'Y': 1, 'G': 1, 'Z': 1})
+Player 1 guesses consonant: W
+W is not in the phrase.
+Reward for this action: -30
+Current game state: _L___D
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ L _ _ _ D
+Scores: Player 1: 1800
+Guessed Letters: D, L, N, P, R, S, W
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'W', 'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'M': 1, 'T': 1, 'K': 1, 'F': 2, 'Y': 1, 'G': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, F, G, H, J, K, M, Q, T, V, X, Y, Z
+Computing letter counts...
+Guessed letters: {'W', 'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'M': 1, 'T': 1, 'K': 1, 'F': 2, 'Y': 1, 'G': 1, 'Z': 1})
+Player 1 guesses consonant: F
+F is not in the phrase.
+Reward for this action: -30
+Current game state: _L___D
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 11) --
+Phrase: _ L _ _ _ D
+Scores: Player 1: 1800
+Guessed Letters: D, F, L, N, P, R, S, W
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'W', 'F', 'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'M': 1, 'T': 1, 'G': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: ELATED
+Incorrect solution. Player guessed: ELATED
+Reward for this action: -500
+Current game state: _L___D
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 12) --
+Phrase: _ L _ _ _ D
+Scores: Player 1: 1800
+Guessed Letters: D, F, L, N, P, R, S, W
+Guessed Phrases: ELATED
+Computing letter counts...
+Guessed letters: {'W', 'F', 'N', 'D', 'S', 'P', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 1, 'M': 1, 'G': 1, 'Z': 1})
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: GLAZED
+Congratulations! Player 1 solved the puzzle!
+The phrase was: G L A Z E D
+Reward for this action: 2000
+Current game state: GLAZED
+Player 1's current score: 1800
+Episode 17/500 completed
+The word is: DIARRHEA. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'K': 148, 'R': 1114, 'V': 205, 'D': 625, 'B': 319, 'T': 876, 'C': 620, 'S': 1038, 'Y': 233, 'P': 434, 'L': 752, 'M': 386, 'H': 383, 'Q': 30, 'J': 17, 'F': 208, 'G': 186, 'W': 145, 'Z': 27, 'X': 44})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'K': 148, 'R': 1114, 'V': 205, 'D': 625, 'B': 319, 'T': 876, 'C': 620, 'S': 1038, 'Y': 233, 'P': 434, 'L': 752, 'M': 386, 'H': 383, 'Q': 30, 'J': 17, 'F': 208, 'G': 186, 'W': 145, 'Z': 27, 'X': 44})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 2 time(s).
+Reward for this action: 1800
+Current game state: ___RR___
+Player 1's current score: 1600
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ R R _ _ _
+Scores: Player 1: 1600
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'H': 2, 'C': 1, 'D': 2, 'L': 2, 'F': 1, 'V': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'H': 2, 'C': 1, 'D': 2, 'L': 2, 'F': 1, 'V': 2})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: ___RR___
+Player 1's current score: 1600
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ R R _ _ _
+Scores: Player 1: 1600
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1, 'D': 2, 'V': 2, 'L': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1, 'D': 2, 'V': 2, 'L': 1})
+Player 1 guesses consonant: D
+D is in the phrase! It occurs 1 time(s).
+Reward for this action: 900
+Current game state: D__RR___
+Player 1's current score: 2400
+-- Player 1's Turn (Turn count: 5) --
+Phrase: D _ _ R R _ _ _
+Scores: Player 1: 2400
+Guessed Letters: D, N, R, S
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: DIARRHEA
+Congratulations! Player 1 solved the puzzle!
+The phrase was: D I A R R H E A
+Reward for this action: 2000
+Current game state: DIARRHEA
+Player 1's current score: 2400
+Episode 18/500 completed
+The word is: ONCE. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 213, 'L': 449, 'T': 436, 'C': 250, 'D': 307, 'S': 594, 'H': 242, 'M': 260, 'N': 374, 'R': 428, 'F': 168, 'G': 196, 'Y': 154, 'J': 46, 'W': 186, 'P': 274, 'X': 23, 'Q': 5, 'K': 205, 'V': 67, 'Z': 35})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 213, 'L': 449, 'T': 436, 'C': 250, 'D': 307, 'S': 594, 'H': 242, 'M': 260, 'N': 374, 'R': 428, 'F': 168, 'G': 196, 'Y': 154, 'J': 46, 'W': 186, 'P': 274, 'X': 23, 'Q': 5, 'K': 205, 'V': 67, 'Z': 35})
+Player 1 guesses consonant: S
+S is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S'}
+Letter counts: defaultdict(<class 'int'>, {'B': 154, 'L': 373, 'T': 300, 'D': 246, 'C': 204, 'H': 170, 'M': 201, 'N': 297, 'R': 358, 'F': 146, 'G': 131, 'Y': 120, 'J': 31, 'W': 132, 'P': 189, 'X': 20, 'Q': 5, 'V': 58, 'K': 164, 'Z': 31})
+Player 1 guesses consonant: L
+L is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 118, 'T': 256, 'D': 197, 'C': 164, 'H': 140, 'M': 160, 'N': 264, 'R': 330, 'F': 97, 'G': 102, 'Y': 97, 'J': 27, 'W': 104, 'P': 147, 'X': 15, 'Q': 5, 'V': 45, 'K': 137, 'Z': 28})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'B': 118, 'T': 256, 'D': 197, 'C': 164, 'H': 140, 'M': 160, 'N': 264, 'R': 330, 'F': 97, 'G': 102, 'Y': 97, 'J': 27, 'W': 104, 'P': 147, 'X': 15, 'Q': 5, 'V': 45, 'K': 137, 'Z': 28})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ____
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: L, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, M, N, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'B': 74, 'T': 194, 'D': 143, 'C': 128, 'H': 118, 'M': 123, 'N': 223, 'G': 67, 'Y': 63, 'W': 77, 'P': 99, 'X': 14, 'Q': 5, 'V': 38, 'K': 112, 'F': 65, 'Z': 26, 'J': 24})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 600
+Current game state: _N__
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 7) --
+Phrase: _ N _ _
+Scores: Player 1: 500
+Guessed Letters: L, N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'W': 4, 'T': 9, 'V': 1, 'Y': 1, 'G': 2, 'H': 1, 'C': 2, 'F': 1, 'K': 6, 'B': 1, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'L', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'W': 4, 'T': 9, 'V': 1, 'Y': 1, 'G': 2, 'H': 1, 'C': 2, 'F': 1, 'K': 6, 'B': 1, 'D': 1})
+Player 1 guesses consonant: T
+T is not in the phrase.
+Reward for this action: -30
+Current game state: _N__
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 8) --
+Phrase: _ N _ _
+Scores: Player 1: 500
+Guessed Letters: L, N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'W': 4, 'V': 1, 'Y': 1, 'G': 1, 'H': 1, 'C': 2, 'F': 1, 'K': 4, 'B': 1, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'W': 4, 'V': 1, 'Y': 1, 'G': 1, 'H': 1, 'C': 2, 'F': 1, 'K': 4, 'B': 1, 'D': 1})
+Player 1 guesses consonant: W
+W is not in the phrase.
+Reward for this action: -30
+Current game state: _N__
+Player 1's current score: 500
+-- Player 1's Turn (Turn count: 9) --
+Phrase: _ N _ _
+Scores: Player 1: 500
+Guessed Letters: L, N, R, S, T, W
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'W', 'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'V': 1, 'Y': 1, 'H': 1, 'C': 2, 'F': 1, 'K': 2, 'B': 1, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, M, P, Q, V, X, Y, Z
+Computing letter counts...
+Guessed letters: {'W', 'T', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'V': 1, 'Y': 1, 'H': 1, 'C': 2, 'F': 1, 'K': 2, 'B': 1, 'D': 1})
+Player 1 guesses consonant: C
+C is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: _NC_
+Player 1's current score: 1100
+-- Player 1's Turn (Turn count: 10) --
+Phrase: _ N C _
+Scores: Player 1: 1100
+Guessed Letters: C, L, N, R, S, T, W
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'W', 'T', 'C', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, D, F, G, H, J, K, M, P, Q, V, X, Y, Z
+Computing letter counts...
+Guessed letters: {'W', 'T', 'C', 'N', 'S', 'R', 'L'}
+Letter counts: defaultdict(<class 'int'>, {'H': 1})
+Player 1 guesses consonant: H
+H is not in the phrase.
+Reward for this action: -30
+Current game state: _NC_
+Player 1's current score: 1100
+-- Player 1's Turn (Turn count: 11) --
+Phrase: _ N C _
+Scores: Player 1: 1100
+Guessed Letters: C, H, L, N, R, S, T, W
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: ONCE
+Congratulations! Player 1 solved the puzzle!
+The phrase was: O N C E
+Reward for this action: 2000
+Current game state: ONCE
+Player 1's current score: 1100
+Episode 19/500 completed
+The word is: BLASPHEMOUS. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 180, 'T': 841, 'N': 840, 'M': 290, 'D': 352, 'Y': 156, 'R': 742, 'L': 467, 'C': 534, 'S': 654, 'P': 361, 'G': 296, 'V': 145, 'H': 201, 'K': 57, 'W': 52, 'Q': 22, 'J': 11, 'F': 144, 'Z': 29, 'X': 43})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'B': 180, 'T': 841, 'N': 840, 'M': 290, 'D': 352, 'Y': 156, 'R': 742, 'L': 467, 'C': 534, 'S': 654, 'P': 361, 'G': 296, 'V': 145, 'H': 201, 'K': 57, 'W': 52, 'Q': 22, 'J': 11, 'F': 144, 'Z': 29, 'X': 43})
+Player 1 guesses consonant: T
+T is not in the phrase.
+Reward for this action: -30
+Current game state: ___________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 227, 'R': 234, 'C': 167, 'N': 236, 'M': 83, 'D': 129, 'P': 115, 'L': 160, 'Y': 45, 'G': 108, 'K': 27, 'W': 22, 'V': 52, 'B': 68, 'H': 77, 'Z': 12, 'F': 53, 'Q': 6, 'J': 3, 'X': 13})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 227, 'R': 234, 'C': 167, 'N': 236, 'M': 83, 'D': 129, 'P': 115, 'L': 160, 'Y': 45, 'G': 108, 'K': 27, 'W': 22, 'V': 52, 'B': 68, 'H': 77, 'Z': 12, 'F': 53, 'Q': 6, 'J': 3, 'X': 13})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: ___________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 84, 'R': 89, 'C': 52, 'M': 31, 'P': 45, 'L': 57, 'V': 18, 'D': 42, 'H': 36, 'Y': 15, 'B': 29, 'G': 16, 'K': 12, 'W': 10, 'F': 11, 'J': 3, 'Q': 1, 'X': 3, 'Z': 4})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: ___________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 84, 'R': 89, 'C': 52, 'M': 31, 'P': 45, 'L': 57, 'V': 18, 'D': 42, 'H': 36, 'Y': 15, 'B': 29, 'G': 16, 'K': 12, 'W': 10, 'F': 11, 'J': 3, 'Q': 1, 'X': 3, 'Z': 4})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'T'}
+Letter counts: defaultdict(<class 'int'>, {'S': 84, 'R': 89, 'C': 52, 'M': 31, 'P': 45, 'L': 57, 'V': 18, 'D': 42, 'H': 36, 'Y': 15, 'B': 29, 'G': 16, 'K': 12, 'W': 10, 'F': 11, 'J': 3, 'Q': 1, 'X': 3, 'Z': 4})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: ___________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 5) --
+Phrase: _ _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'C': 9, 'M': 8, 'P': 8, 'S': 17, 'L': 17, 'K': 2, 'B': 7, 'D': 4, 'H': 8, 'V': 6, 'F': 1, 'Y': 7, 'X': 3, 'W': 1, 'G': 1, 'Z': 2})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'C': 9, 'M': 8, 'P': 8, 'S': 17, 'L': 17, 'K': 2, 'B': 7, 'D': 4, 'H': 8, 'V': 6, 'F': 1, 'Y': 7, 'X': 3, 'W': 1, 'G': 1, 'Z': 2})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 2 time(s).
+Reward for this action: 2200
+Current game state: ___S______S
+Player 1's current score: 2000
+-- Player 1's Turn (Turn count: 6) --
+Phrase: _ _ _ S _ _ _ _ _ _ S
+Scores: Player 1: 2000
+Guessed Letters: N, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: BLASPHEMOUS
+Congratulations! Player 1 solved the puzzle!
+The phrase was: B L A S P H E M O U S
+Reward for this action: 2000
+Current game state: BLASPHEMOUS
+Player 1's current score: 2000
+Episode 20/500 completed
+The word is: PROPERTIES. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'G': 540, 'B': 296, 'N': 1277, 'D': 663, 'T': 1258, 'C': 820, 'S': 1089, 'R': 1174, 'Y': 267, 'M': 458, 'L': 774, 'V': 233, 'P': 553, 'H': 384, 'Q': 32, 'J': 28, 'F': 225, 'W': 103, 'Z': 53, 'K': 97, 'X': 53})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: __________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'V': 114, 'R': 506, 'B': 145, 'D': 241, 'Y': 133, 'T': 462, 'S': 473, 'L': 350, 'C': 332, 'P': 273, 'M': 184, 'H': 204, 'Q': 8, 'J': 10, 'F': 78, 'W': 48, 'G': 105, 'Z': 28, 'K': 52, 'X': 13})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'V': 114, 'R': 506, 'B': 145, 'D': 241, 'Y': 133, 'T': 462, 'S': 473, 'L': 350, 'C': 332, 'P': 273, 'M': 184, 'H': 204, 'Q': 8, 'J': 10, 'F': 78, 'W': 48, 'G': 105, 'Z': 28, 'K': 52, 'X': 13})
+Player 1 guesses consonant: R
+R is in the phrase! It occurs 2 time(s).
+Reward for this action: 1400
+Current game state: _R___R____
+Player 1's current score: 1200
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ R _ _ _ R _ _ _ _
+Scores: Player 1: 1200
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 6, 'D': 4, 'C': 3, 'T': 4, 'F': 4, 'P': 8, 'L': 5, 'B': 5, 'Y': 1, 'M': 2, 'V': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 6, 'D': 4, 'C': 3, 'T': 4, 'F': 4, 'P': 8, 'L': 5, 'B': 5, 'Y': 1, 'M': 2, 'V': 1})
+Player 1 guesses consonant: P
+P is in the phrase! It occurs 2 time(s).
+Reward for this action: 1600
+Current game state: PR_P_R____
+Player 1's current score: 2600
+-- Player 1's Turn (Turn count: 4) --
+Phrase: P R _ P _ R _ _ _ _
+Scores: Player 1: 2600
+Guessed Letters: N, P, R
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: PROPERTIES
+Congratulations! Player 1 solved the puzzle!
+The phrase was: P R O P E R T I E S
+Reward for this action: 2000
+Current game state: PROPERTIES
+Player 1's current score: 2600
+Episode 21/500 completed
+The word is: STALEMATE. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: _________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 800
+Player 1 spun the wheel and got: 800
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'N': 1573, 'B': 399, 'D': 967, 'M': 615, 'L': 1043, 'T': 1514, 'C': 1022, 'G': 797, 'S': 1494, 'R': 1606, 'Y': 322, 'P': 662, 'V': 308, 'H': 536, 'Q': 40, 'J': 44, 'F': 311, 'W': 169, 'Z': 54, 'X': 69, 'K': 175})
+Player 1 guesses consonant: R
+R is not in the phrase.
+Reward for this action: -30
+Current game state: _________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 802, 'B': 177, 'D': 453, 'M': 319, 'L': 590, 'T': 714, 'C': 521, 'G': 339, 'S': 722, 'P': 267, 'Y': 130, 'V': 129, 'H': 256, 'Q': 27, 'J': 26, 'F': 130, 'Z': 29, 'W': 70, 'X': 45, 'K': 85})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'R'}
+Letter counts: defaultdict(<class 'int'>, {'N': 802, 'B': 177, 'D': 453, 'M': 319, 'L': 590, 'T': 714, 'C': 521, 'G': 339, 'S': 722, 'P': 267, 'Y': 130, 'V': 129, 'H': 256, 'Q': 27, 'J': 26, 'F': 130, 'Z': 29, 'W': 70, 'X': 45, 'K': 85})
+Player 1 guesses consonant: N
+N is not in the phrase.
+Reward for this action: -30
+Current game state: _________
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 4) --
+Phrase: _ _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: N, R
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 321, 'L': 273, 'B': 105, 'T': 284, 'D': 175, 'M': 128, 'C': 211, 'Q': 10, 'V': 59, 'Y': 67, 'P': 126, 'J': 13, 'H': 123, 'F': 51, 'G': 59, 'W': 21, 'Z': 13, 'K': 45, 'X': 16})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'S': 321, 'L': 273, 'B': 105, 'T': 284, 'D': 175, 'M': 128, 'C': 211, 'Q': 10, 'V': 59, 'Y': 67, 'P': 126, 'J': 13, 'H': 123, 'F': 51, 'G': 59, 'W': 21, 'Z': 13, 'K': 45, 'X': 16})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: S________
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 5) --
+Phrase: S _ _ _ _ _ _ _ _
+Scores: Player 1: 600
+Guessed Letters: N, R, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 6, 'B': 13, 'T': 32, 'D': 17, 'L': 28, 'P': 17, 'C': 25, 'H': 7, 'Y': 9, 'V': 2, 'X': 1, 'M': 8, 'K': 4, 'Z': 4, 'W': 4, 'F': 2, 'J': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'G': 6, 'B': 13, 'T': 32, 'D': 17, 'L': 28, 'P': 17, 'C': 25, 'H': 7, 'Y': 9, 'V': 2, 'X': 1, 'M': 8, 'K': 4, 'Z': 4, 'W': 4, 'F': 2, 'J': 1})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 2 time(s).
+Reward for this action: 1400
+Current game state: ST_____T_
+Player 1's current score: 1800
+-- Player 1's Turn (Turn count: 6) --
+Phrase: S T _ _ _ _ _ T _
+Scores: Player 1: 1800
+Guessed Letters: N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 3, 'Y': 2, 'B': 1, 'M': 1, 'P': 2, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Bankrupt
+Player 1 spun the wheel and got: Bankrupt
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, V, W, X, Y, Z
+Reward for this action: -200
+Current game state: ST_____T_
+Player 1's current score: 0
+-- Player 1's Turn (Turn count: 7) --
+Phrase: S T _ _ _ _ _ T _
+Scores: Player 1: 0
+Guessed Letters: N, R, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'S', 'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 3, 'Y': 2, 'B': 1, 'M': 1, 'P': 2, 'D': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 900
+Player 1 spun the wheel and got: 900
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'S', 'N', 'T', 'R'}
+Letter counts: defaultdict(<class 'int'>, {'L': 3, 'Y': 2, 'B': 1, 'M': 1, 'P': 2, 'D': 1})
+Player 1 guesses consonant: L
+L is in the phrase! It occurs 1 time(s).
+Reward for this action: 1000
+Current game state: ST_L___T_
+Player 1's current score: 900
+-- Player 1's Turn (Turn count: 8) --
+Phrase: S T _ L _ _ _ T _
+Scores: Player 1: 900
+Guessed Letters: L, N, R, S, T
+Guessed Phrases: 
+Only one possible phrase left, must solve.
+
+Player 1's turn:
+Action: Solve the puzzle
+Player 1 attempts to solve: STALEMATE
+Congratulations! Player 1 solved the puzzle!
+The phrase was: S T A L E M A T E
+Reward for this action: 2000
+Current game state: STALEMATE
+Player 1's current score: 900
+Episode 22/500 completed
+The word is: ENTITIES. Let's play!
+-- Player 1's Turn (Turn count: 1) --
+Phrase: _ _ _ _ _ _ _ _
+Scores: Player 1: 0
+Guessed Letters: 
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: set()
+Letter counts: defaultdict(<class 'int'>, {'K': 294, 'D': 1202, 'V': 342, 'R': 1932, 'S': 1885, 'N': 1964, 'B': 500, 'T': 1624, 'C': 1168, 'M': 742, 'L': 1355, 'Y': 384, 'P': 748, 'G': 1012, 'H': 690, 'Q': 50, 'J': 43, 'F': 392, 'Z': 57, 'W': 290, 'X': 71})
+Player 1 guesses consonant: N
+N is in the phrase! It occurs 1 time(s).
+Reward for this action: 700
+Current game state: _N______
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 2) --
+Phrase: _ N _ _ _ _ _ _
+Scores: Player 1: 600
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'S': 64, 'Y': 23, 'L': 50, 'T': 64, 'Z': 2, 'D': 66, 'R': 64, 'C': 42, 'M': 19, 'X': 2, 'W': 10, 'P': 10, 'B': 7, 'Q': 1, 'H': 14, 'V': 15, 'F': 19, 'G': 14, 'J': 4, 'K': 14})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: Lose a Turn
+Player 1 spun the wheel and got: Lose a Turn
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Reward for this action: -50
+Current game state: _N______
+Player 1's current score: 600
+-- Player 1's Turn (Turn count: 3) --
+Phrase: _ N _ _ _ _ _ _
+Scores: Player 1: 600
+Guessed Letters: N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N'}
+Letter counts: defaultdict(<class 'int'>, {'S': 64, 'Y': 23, 'L': 50, 'T': 64, 'Z': 2, 'D': 66, 'R': 64, 'C': 42, 'M': 19, 'X': 2, 'W': 10, 'P': 10, 'B': 7, 'Q': 1, 'H': 14, 'V': 15, 'F': 19, 'G': 14, 'J': 4, 'K': 14})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: E
+E is in the phrase! It occurs 2 time(s).
+Reward for this action: 150
+Current game state: EN____E_
+Player 1's current score: 350
+-- Player 1's Turn (Turn count: 4) --
+Phrase: E N _ _ _ _ E _
+Scores: Player 1: 350
+Guessed Letters: E, N
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'R': 7, 'M': 1, 'D': 12, 'S': 6, 'L': 8, 'C': 4, 'F': 3, 'V': 2, 'G': 3, 'T': 5, 'H': 2})
+
+Player 1's turn:
+Action: Buy a vowel
+Player 1 buys vowel: O
+O is not in the phrase.
+Reward for this action: -100
+Current game state: EN____E_
+Player 1's current score: 100
+-- Player 1's Turn (Turn count: 5) --
+Phrase: E N _ _ _ _ E _
+Scores: Player 1: 100
+Guessed Letters: E, N, O
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'O', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'V': 2, 'G': 3, 'R': 3, 'D': 8, 'L': 6, 'F': 1, 'S': 5, 'T': 5, 'H': 2, 'C': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 600
+Player 1 spun the wheel and got: 600
+Available consonants: B, C, D, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'O', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'V': 2, 'G': 3, 'R': 3, 'D': 8, 'L': 6, 'F': 1, 'S': 5, 'T': 5, 'H': 2, 'C': 1})
+Player 1 guesses consonant: D
+D is not in the phrase.
+Reward for this action: -30
+Current game state: EN____E_
+Player 1's current score: 100
+-- Player 1's Turn (Turn count: 6) --
+Phrase: E N _ _ _ _ E _
+Scores: Player 1: 100
+Guessed Letters: D, E, N, O
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'N', 'O', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'T': 2, 'L': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 1000
+Player 1 spun the wheel and got: 1000
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, S, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'N', 'O', 'E', 'D'}
+Letter counts: defaultdict(<class 'int'>, {'S': 2, 'T': 2, 'L': 1})
+Player 1 guesses consonant: S
+S is in the phrase! It occurs 1 time(s).
+Reward for this action: 1100
+Current game state: EN____ES
+Player 1's current score: 1100
+-- Player 1's Turn (Turn count: 7) --
+Phrase: E N _ _ _ _ E S
+Scores: Player 1: 1100
+Guessed Letters: D, E, N, O, S
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'O', 'N', 'D', 'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'T': 2, 'L': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 500
+Player 1 spun the wheel and got: 500
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, T, V, W, X, Y, Z
+Computing letter counts...
+Guessed letters: {'O', 'N', 'D', 'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'T': 2, 'L': 1})
+Player 1 guesses consonant: T
+T is in the phrase! It occurs 2 time(s).
+Reward for this action: 1200
+Current game state: ENT_T_ES
+Player 1's current score: 2100
+-- Player 1's Turn (Turn count: 8) --
+Phrase: E N T _ T _ E S
+Scores: Player 1: 2100
+Guessed Letters: D, E, N, O, S, T
+Guessed Phrases: 
+Computing letter counts...
+Guessed letters: {'O', 'T', 'N', 'D', 'S', 'E'}
+Letter counts: defaultdict(<class 'int'>, {'L': 1})
+
+Player 1's turn:
+Action: Spin the wheel and guess a consonant
+Wheel spin outcome: 700
+Player 1 spun the wheel and got: 700
+Available consonants: B, C, F, G, H, J, K, L, M, P, Q, R, V, W, X, Y, Z

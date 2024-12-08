@@ -2,142 +2,117 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-"""
-Script to train and evaluate a Q-learning agent on Wheel of Fortune with a train-test split.
-
-Usage:
-    python train_q_learning.py [options]
-
-Example:
-    python train_q_learning.py --num_episodes 10000 --epsilon 0.1
-"""
-
 import argparse
 import pickle
 import random
-
-from data.phrases import phrases
+import numpy as np
 from data.words import words
 from data.wheel_values import wheel_values
 from players.q_learning_player import QLearningPlayer
 from wof import WheelOfFortune
 
-def train_q_learning_player(
+def train_qtable_player(
     train_phrases,
     wheel_values,
-    num_episodes=5000,
+    num_episodes=500,
     alpha=0.1,
-    gamma=0.9,
-    epsilon=0.1,
-    save_path="q_table.pkl",
-    save_interval=100
+    gamma=0.99,
+    epsilon_start=1.0,
+    epsilon_decay=0.995,
+    epsilon_min=0.1,
+    save_path="qtable_model.pkl"
 ):
-    # Initialize game and player using training phrases only
     game = WheelOfFortune(
-        train_phrases,
-        wheel_values,
+        train_phrases, 
+        wheel_values, 
         num_players=1,
-        player_class=lambda pid: QLearningPlayer(pid, alpha=alpha, gamma=gamma, epsilon=epsilon)
+        player_class=lambda pid: QLearningPlayer(
+            pid, 
+            alpha=alpha,
+            gamma=gamma,
+            epsilon=epsilon_start,
+            epsilon_decay=epsilon_decay,
+            epsilon_min=epsilon_min
+        )
     )
-    player = game.players[0]  # QLearningPlayer
+    player = game.players[0]
 
     for episode in range(1, num_episodes + 1):
         game.reset_game()
         while not game.is_solved():
             game.play_turn()
-            if game.is_solved():
-                break
             game.current_player = (game.current_player + 1) % len(game.players)
 
-        # Print out the episode number each time
-        print(f"Episode {episode} completed.")
+        player.end_game(game)
+        if episode % 100 == 0:
+            print(f"Episode {episode}/{num_episodes} completed. Epsilon: {player.epsilon:.4f}")
 
-        # Save progress periodically
-        if episode % save_interval == 0:
-            print(f"Episode {episode}/{num_episodes} completed. Saving Q-table...")
-            os.makedirs(os.path.dirname(save_path), exist_ok=True)
-            with open(save_path, "wb") as f:
-                pickle.dump(player.q_table, f)
-            print(f"Q-table saved to {save_path}.")
-
-    # Save final Q-table
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    with open(save_path, "wb") as f:
+    with open(save_path, 'wb') as f:
         pickle.dump(player.q_table, f)
-    print("Training completed.")
-    print(f"Final Q-table saved to {save_path}.")
+    print(f"Training completed. Q-table saved to {save_path}.")
 
-def evaluate_q_learning_player(test_phrases, wheel_values, q_table_path, num_games=100):
-    # Create a QLearningPlayer with epsilon=0 (greedy) and no learning to evaluate
-    player = QLearningPlayer(player_id=0, alpha=0, gamma=0.9, epsilon=0)
+def evaluate_qtable_player(eval_phrases, wheel_values, model_path="qtable_model.pkl", num_games=100):
+    with open(model_path, 'rb') as f:
+        q_table = pickle.load(f)
 
-    # Load the trained Q-table
-    with open(q_table_path, "rb") as f:
-        player.q_table = pickle.load(f)
+    player = QLearningPlayer(0, epsilon=0)
+    player.q_table = q_table
 
+    game = WheelOfFortune(
+        eval_phrases, wheel_values, num_players=1,
+        player_class=lambda pid: player
+    )
+
+    total_turns = 0
     solved_count = 0
-    total_score = 0
-
-    # Create a separate game instance for testing with the test phrase set
-    test_game = WheelOfFortune(test_phrases, wheel_values, num_players=1, player_class=lambda pid: player)
 
     for _ in range(num_games):
-        test_game.reset_game()
-
-        while not test_game.is_solved():
-            test_game.play_turn()
-            if test_game.is_solved():
+        game.reset_game()
+        num_turns = 0
+        while not game.is_solved():
+            game.play_turn()
+            num_turns += 1
+            if game.is_solved():
                 solved_count += 1
                 break
-            test_game.current_player = (test_game.current_player + 1) % len(test_game.players)
+            game.current_player = (game.current_player + 1) % len(game.players)
+        total_turns += num_turns
 
-        total_score += test_game.scores[0]
-
-    avg_score = total_score / num_games
-    solve_rate = (solved_count / num_games) * 100
-    print("Evaluation on test set:")
-    print(f"  Average Score: {avg_score:.2f}")
-    print(f"  Solved Puzzles: {solved_count}/{num_games} ({solve_rate:.2f}%)")
+    avg_turns = total_turns / num_games
+    print(f"Average number of turns per game: {avg_turns:.2f}")
+    print(f"Solved Games: {solved_count}/{num_games}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train a Q-learning agent on Wheel of Fortune with a train-test split.")
-    parser.add_argument("--num_episodes", type=int, default=5000, help="Number of training episodes.")
+    parser = argparse.ArgumentParser(description="Train and evaluate a Q-table agent on Wheel of Fortune.")
+    parser.add_argument("--num_episodes", type=int, default=500, help="Number of training episodes.")
     parser.add_argument("--alpha", type=float, default=0.1, help="Learning rate.")
-    parser.add_argument("--gamma", type=float, default=0.9, help="Discount factor for future rewards.")
-    parser.add_argument("--epsilon", type=float, default=0.1, help="Initial epsilon for exploration.")
-    parser.add_argument("--save_path", type=str, default="models/q_table.pkl", help="Path to save the Q-table.")
-    parser.add_argument("--save_interval", type=int, default=100, help="Save Q-table every N episodes.")
-    parser.add_argument("--test_games", type=int, default=100, help="Number of games to evaluate on test set.")
-
+    parser.add_argument("--gamma", type=float, default=0.99, help="Discount factor for future rewards.")
+    parser.add_argument("--epsilon_start", type=float, default=1.0, help="Initial epsilon for exploration.")
+    parser.add_argument("--epsilon_decay", type=float, default=0.995, help="Epsilon decay rate per episode.")
+    parser.add_argument("--epsilon_min", type=float, default=0.1, help="Minimum epsilon value.")
+    parser.add_argument("--save_path", type=str, default="models/qtable_model.pkl", help="Path to save the trained Q-table.")
+    
     args = parser.parse_args()
 
-    # Shuffle and split phrases into train (90%) and test (10%)
-    all_phrases = words[:]
-    random.shuffle(all_phrases)
-    split_index = int(0.9 * len(all_phrases))
-    train_phrases = all_phrases[:split_index]
-    test_phrases = all_phrases[split_index:]
+    # Implement 90-10 split
+    random.shuffle(words)
+    split_index = int(0.9 * len(words))
+    train_phrases = words[:split_index]
+    eval_phrases = words[split_index:]
 
-    print("Starting training of Q-learning agent...")
-    print(f"Training phrases: {len(train_phrases)}")
-    print(f"Testing phrases: {len(test_phrases)}")
-
-    # Train on the training set
-    train_q_learning_player(
+    print("Starting training of Q-table agent...")
+    train_qtable_player(
         train_phrases,
         wheel_values,
         num_episodes=args.num_episodes,
         alpha=args.alpha,
         gamma=args.gamma,
-        epsilon=args.epsilon,
-        save_path=args.save_path,
-        save_interval=args.save_interval
+        epsilon_start=args.epsilon_start,
+        epsilon_decay=args.epsilon_decay,
+        epsilon_min=args.epsilon_min,
+        save_path=args.save_path
     )
 
-    # Evaluate on the test set
-    evaluate_q_learning_player(
-        test_phrases,
-        wheel_values,
-        q_table_path=args.save_path,
-        num_games=args.test_games
-    )
+    print("\nEvaluating trained Q-table agent...")
+    evaluate_qtable_player(eval_phrases, wheel_values, model_path=args.save_path)

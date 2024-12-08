@@ -1,120 +1,109 @@
 import random
+from collections import defaultdict
 import numpy as np
 from players.player import Player
-from constants import VOWELS, CONSONANTS, COST_OF_VOWEL
+from data.phrases import phrases
+
+def default_q_values():
+    return np.zeros(3)
 
 class QLearningPlayer(Player):
-    def __init__(self, player_id, alpha=0.1, gamma=0.9, epsilon=0.1):
+    def __init__(self, player_id, alpha=0.1, gamma=0.99, epsilon=1.0, epsilon_decay=0.995, epsilon_min=0.1):
         super().__init__(player_id)
-        self.q_table = {}
-        self.alpha = alpha   # Learning rate
-        self.gamma = gamma   # Discount factor
-        self.epsilon = epsilon  # Exploration rate
+        self.alpha = alpha
+        self.gamma = gamma
+        self.epsilon = epsilon
+        self.epsilon_decay = epsilon_decay
+        self.epsilon_min = epsilon_min
+        self.q_table = defaultdict(default_q_values)
+        self.all_phrases = phrases
 
-    def get_state(self, game):
-        # Represent the game state as a tuple
-        return (
-            tuple(game.revealed_phrase),
-            game.scores[self.player_id],
-            tuple(sorted(game.guessed_letters))
-        )
-
-    def get_legal_actions(self, game):
-        # Start with spin always allowed
-        legal_actions = ['S']
-
-        # Check if buying a vowel is possible
-        available_vowels = [v for v in VOWELS if v not in game.guessed_letters]
-        if game.scores[self.player_id] >= COST_OF_VOWEL and available_vowels:
-            legal_actions.append('B')
-
-        # Determine how many letters are revealed
-        revealed_letters = sum(1 for c in game.revealed_phrase if c != '_')
-        total_letters = sum(1 for c in game.current_phrase if c.isalpha())
-
-        # Check if any consonants remain
-        available_consonants = [c for c in CONSONANTS if c not in game.guessed_letters]
-
-        # Allow solve under these conditions:
-        # 1. If a significant portion (70%) of letters are revealed, OR
-        # 2. If no vowels can be bought and no consonants remain, solving might be the only option.
-        # This ensures the player won't get stuck at the end.
-        if total_letters > 0:
-            if revealed_letters > total_letters * 0.7:
-                legal_actions.append('P')
-            elif not available_vowels and not available_consonants:
-                # No more letters to guess through spinning or buying vowels, must try solving
-                legal_actions.append('P')
-
-        return legal_actions
-
-    def choose_action(self, state, game):
-        legal_actions = self.get_legal_actions(game)
-
-        # If no legal actions other than spin, it must spin. 
-        # (Shouldn't happen, since spin is always allowed, but just in case)
-        if not legal_actions:
-            return 'S'
-
-        # Epsilon-greedy action selection among legal actions
+    def encode_state(self, game):
+        revealed_phrase = ''.join(game.revealed_phrase)
+        guessed_letters = ''.join(sorted(game.guessed_letters))
+        score = game.scores[self.player_id]
+        return (revealed_phrase, guessed_letters, score)
+    def act(self, game):
+        state = self.encode_state(game)
+        available_actions = self.get_available_actions(game)
         if random.random() < self.epsilon:
-            return random.choice(legal_actions)
+            return random.choice(available_actions)
+        else:
+            # Initialize Q-values for new states
+            if state not in self.q_table:
+                self.q_table[state] = np.zeros(3)
+            return max(available_actions, key=lambda a: self.q_table[state][a])
+            
+    def only_vowels_available(self, game):
+        possible_phrases = self.get_possible_phrases(game)
+        # print(f"Possible phrases: {possible_phrases}")
+        if not possible_phrases:
+            print("No possible phrases found.")
+            return False
+        # print("Possible phrases found: ", possible_phrases)
+        print("Computing letter counts...")
+        letter_counts = defaultdict(int)
+        print(f"Guessed letters: {game.guessed_letters}")
+        for phrase in possible_phrases:
+            for letter in set(phrase.upper()) - set(game.guessed_letters) - set('AEIOU'):
+                letter_counts[letter] += 1
+        print(f"Letter counts: {letter_counts}")
+        return False if letter_counts else True
 
-        q_values = self.q_table.get(state, {})
-        if not q_values:
-            # If no Q-values exist for this state, choose randomly among legal actions
-            return random.choice(legal_actions)
+    def get_available_actions(self, game):
+        actions = []
+        if set('BCDFGHJKLMNPQRSTVWXYZ') - set(game.guessed_letters):
+            actions.append(0)  # Spin (guess consonant)
+        if set('AEIOU') - set(game.guessed_letters) and game.scores[self.player_id] >= 250:
+            actions.append(1)  # Buy vowel
+        actions.append(2)  # Solve puzzle is always available
 
-        # Filter Q-values to only include legal actions
-        filtered_q_values = {a: q_values.get(a, 0) for a in legal_actions}
-        # Pick the action with the highest Q-value among the legal ones
-        return max(filtered_q_values, key=filtered_q_values.get)
+        return actions if actions else [2]  # If no other options, must solve
 
-    def update_q_value(self, state, action, reward, next_state):
-        # Update Q-value using Q-learning formula
-        current_q = self.q_table.get(state, {}).get(action, 0)
-        next_max_q = max(self.q_table.get(next_state, {}).values(), default=0)
-        new_q = current_q + self.alpha * (reward + self.gamma * next_max_q - current_q)
+    def update_q_table(self, state, action, reward, next_state, done):
         if state not in self.q_table:
-            self.q_table[state] = {}
+            self.q_table[state] = np.zeros(3)
+        
+        current_q = self.q_table[state][action]
+        
+        if done:
+            max_next_q = 0
+        else:
+            if next_state not in self.q_table:
+                self.q_table[next_state] = np.zeros(3)
+            max_next_q = max(self.q_table[next_state])
+        
+        new_q = current_q + self.alpha * (reward + self.gamma * max_next_q - current_q)
         self.q_table[state][action] = new_q
 
-    def choose_consonant(self):
-        available_consonants = [c for c in CONSONANTS if c not in self.game.guessed_letters]
-        return random.choice(available_consonants) if available_consonants else None
-
-    def choose_vowel(self):
-        available_vowels = [v for v in VOWELS if v not in self.game.guessed_letters]
-        return random.choice(available_vowels) if available_vowels else None
-
-    def choose_solution(self):
-        # Currently random from possible solutions - could refine further
-        possible_solutions = self.get_possible_solutions()
-        return random.choice(possible_solutions) if possible_solutions else ""
-
-    def get_possible_solutions(self):
-        revealed_phrase = ''.join(self.game.revealed_phrase)
+    def get_possible_phrases(self, game):
+        revealed_phrase = ''.join(game.revealed_phrase)
         possible_solutions = []
 
-        for phrase in self.game.phrases:
-            if phrase.upper() in self.game.guessed_phrases:
+        for phrase in game.phrases:
+            if phrase.upper() in game.guessed_phrases:
                 continue
+
             if len(phrase) != len(revealed_phrase):
                 continue
+
             matches_pattern = True
-            for c1, c2 in zip(revealed_phrase, phrase):
-                if c1 != '_' and c1.upper() != c2.upper():
+            for revealed_char, phrase_char in zip(revealed_phrase, phrase):
+                if revealed_char != '_':
+                    if revealed_char.upper() != phrase_char.upper():
+                        matches_pattern = False
+                        break
+                elif phrase_char.upper() in revealed_phrase.upper():
+                    # If the letter is revealed elsewhere, it should be revealed here too
                     matches_pattern = False
                     break
+
             if not matches_pattern:
                 continue
 
-            # Check consistency with guessed letters
             consistent_with_guesses = True
-            for letter in self.game.guessed_letters:
-                phrase_has_letter = letter.upper() in phrase.upper()
-                revealed_has_letter = letter.upper() in revealed_phrase.upper()
-                if phrase_has_letter != revealed_has_letter:
+            for letter in game.guessed_letters:
+                if (letter.upper() in phrase.upper()) != (letter.upper() in revealed_phrase.upper()):
                     consistent_with_guesses = False
                     break
             if not consistent_with_guesses:
@@ -124,44 +113,119 @@ class QLearningPlayer(Player):
 
         return possible_solutions
 
-    def take_turn(self, game):
-        self.game = game  # Update reference to current game state
-        state = self.get_state(game)
-        action = self.choose_action(state, game)
-        print(f"Player {self.player_id + 1} chose action: {action}")
+    def choose_consonant(self, game):
+        possible_phrases = self.get_possible_phrases(game)
+        # print(f"Possible phrases: {possible_phrases}")
+        if not possible_phrases:
+            print("No possible phrases found.")
+            return None
+        # print("Possible phrases found: ", possible_phrases)
+        # print("Computing letter counts...")
+        letter_counts = defaultdict(int)
+        # print(f"Guessed letters: {game.guessed_letters}")
+        for phrase in possible_phrases:
+            for letter in set(phrase.upper()) - set(game.guessed_letters) - set('AEIOU'):
+                letter_counts[letter] += 1
+        # print(f"Letter counts: {letter_counts}")
+        return max(letter_counts, key=letter_counts.get) if letter_counts else None
 
-        if action == 'S':
-            spin_result = game.spin_wheel()
-            if spin_result in ["Bankrupt", "Lose a Turn"]:
-                reward = -10
-            else:
-                guessed_letter = self.choose_consonant()
-                if guessed_letter is None:
-                    # No consonants available
-                    reward = -5
-                else:
-                    success = game.guess_letter(guessed_letter)
-                    # If correct, reward = spin_result + small bonus, else -5
-                    reward = (spin_result + 5) if success else -5
+    def choose_vowel(self, game):
+        possible_phrases = self.get_possible_phrases(game)
+        if not possible_phrases:
+            return None
+        vowel_counts = defaultdict(int)
+        unguessed_vowels = set('AEIOU') - set(game.guessed_letters)
+        for phrase in possible_phrases:
+            for letter in set(phrase.upper()) & unguessed_vowels:
+                vowel_counts[letter] += 1
+        return max(vowel_counts, key=vowel_counts.get) if vowel_counts else None
 
-        elif action == 'B':
-            letter = self.choose_vowel()
-            if letter is None:
-                # No vowels available
-                reward = -5
-            else:
-                success = game.buy_vowel(letter)
-                # Small positive reward if successful, else -5
-                reward = 5 if success else -5
+    def choose_solution(self, game):
+        possible_phrases = self.get_possible_phrases(game)
+        return random.choice(possible_phrases) if possible_phrases else game.current_phrase
 
-        elif action == 'P':
-            guess = self.choose_solution()
-            success = game.solve_puzzle(guess)
-            # Larger penalty for incorrect guess to discourage random solves
-            reward = 100 if success else -100
+    def spin(self, game):
+        spin_result = game.spin_wheel()
+        print(f"Player {self.player_id + 1} spun the wheel and got: {spin_result}")
+        
+        available_consonants = set('BCDFGHJKLMNPQRSTVWXYZ') - set(game.guessed_letters)
+        # print(f"Available consonants: {', '.join(sorted(available_consonants))}")
+        
+        if spin_result == "Bankrupt":
+            game.scores[self.player_id] = 0
+            return -200  # High penalty for bankruptcy
+        elif spin_result == "Lose a Turn":
+            return -50  # Penalty for losing a turn
         else:
-            # Unrecognized action
-            reward = -1
+            letter = self.choose_consonant(game)
+            if letter is None:
+                print(f"Player {self.player_id + 1} couldn't choose a consonant.")
+                return -20  # Penalty for not being able to choose a consonant
+            print(f"Player {self.player_id + 1} guesses consonant: {letter}")
+            if game.guess_letter(letter):
+                occurrences = game.current_phrase.count(letter)
+                points = spin_result * occurrences
+                game.scores[self.player_id] += points
+                bonus = 100 * occurrences  # High bonus for correct guess, scaled by occurrences
+                return points + bonus  # Return both the points from the wheel and the bonus
+            else:
+                return -30  # Penalty for incorrect guess
+            
+    def buy_vowel(self, game):
+        if game.scores[self.player_id] >= 250:  # Assuming 250 is the cost of a vowel
+            letter = self.choose_vowel(game)
+            if letter is None:
+                print(f"Player {self.player_id + 1} couldn't choose a vowel.")
+                return -20  # Penalty for not being able to choose a vowel
+            print(f"Player {self.player_id + 1} buys vowel: {letter}")
+            if game.buy_vowel(letter):
+                occurrences = game.current_phrase.count(letter)
+                bonus = 200 * occurrences  # High bonus for correct guess, scaled by occurrences
+                return bonus - 250  # Return the bonus minus the cost of buying a vowel
+            else:
+                return -100  # Higher penalty for incorrect vowel guess
+        else:
+            print(f"Player {self.player_id + 1} doesn't have enough points to buy a vowel.")
+            return -40  # Penalty for attempting to buy without enough points
 
-        next_state = self.get_state(game)
-        self.update_q_value(state, action, reward, next_state)
+    def solve_puzzle(self, game):
+        possible_phrases = self.get_possible_phrases(game)
+        unguessed_letters = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ') - set(game.guessed_letters)
+        no_letters_available = not (set('BCDFGHJKLMNPQRSTVWXYZ') & unguessed_letters) and not (set('AEIOU') & unguessed_letters)
+
+        guess = random.choice(possible_phrases) if possible_phrases else game.current_phrase
+        print(f"Player {self.player_id + 1} attempts to solve: {guess}")
+        if game.solve_puzzle(guess):
+            return 2000  # High reward for solving the puzzle
+        else:
+            if no_letters_available:
+                return -50  # Smaller penalty if no letters are available
+            else:
+                return -500  # Large penalty for incorrect solution attempt when letters are available
+
+    def take_turn(self, game):
+        state = self.encode_state(game)
+        action = self.act(game)
+        print(f"\nPlayer {self.player_id + 1}'s turn:")
+        if action == 0:
+            print("Action: Spin the wheel and guess a consonant")
+            reward = self.spin(game)
+        elif action == 1:
+            print("Action: Buy a vowel")
+            reward = self.buy_vowel(game)
+        else:
+            print("Action: Solve the puzzle")
+            reward = self.solve_puzzle(game)
+        next_state = self.encode_state(game)
+        done = game.is_solved()
+        self.update_q_table(state, action, reward, next_state, done)
+        self.epsilon = max(self.epsilon * self.epsilon_decay, self.epsilon_min)
+        print(f"Reward for this action: {reward}")
+        print(f"Current game state: {''.join(game.revealed_phrase)}")
+        print(f"Player {self.player_id + 1}'s current score: {game.scores[self.player_id]}")
+
+    def end_game(self, game):
+        final_state = self.encode_state(game)
+        final_reward = game.scores[self.player_id]
+        for action in range(3):
+            self.update_q_table(final_state, action, final_reward, final_state, True)

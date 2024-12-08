@@ -83,7 +83,7 @@ class WheelOfFortune:
             print("The phrase was:", ' '.join(self.revealed_phrase))
             return True
         else:
-            print("Incorrect solution.")
+            print("Incorrect solution. Player guessed: {}".format(guess))
             self.guessed_phrases.add(guess)
             return False
 
