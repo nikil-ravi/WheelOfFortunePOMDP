@@ -1,5 +1,5 @@
-import pickle
 import random
+import pickle
 from data.phrases import phrases
 from data.words import words
 from data.wheel_values import wheel_values
@@ -15,23 +15,27 @@ class WheelOfFortune:
         self.phrases = phrases
         self.wheel_values = wheel_values
         self.players = [player_class(i) for i in range(num_players)]
-        self.reset_game() # to initialize the game
+        
+        # Do not reset game here. We'll do it in start_game().
+        self.current_phrase = None
+        self.current_player = 0
+        self.bankrupt = [False] * len(self.players)
+        self.guessed_letters = set()
+        self.guessed_phrases = set()
+        self.revealed_phrase = []
+        self.scores = [0] * len(self.players)
+        self.turn_count = 0
 
     def reset_game(self):
         self.current_phrase = random.choice(self.phrases).upper()
         print(f"The word is: {self.current_phrase}. Let's play!")
-        self.current_player = 0 # TODO: should this be random?
+        self.current_player = 0
         self.bankrupt = [False] * len(self.players)
         self.guessed_letters = set()
         self.guessed_phrases = set()
 
-        # revealed phrase initially has underscores and spaces
         self.revealed_phrase = ['_' if letter.isalpha() else letter for letter in self.current_phrase]
-
-        # tracks scores for each player- this is equivalent to accumulated "money" in the game
         self.scores = [0] * len(self.players)
-
-        # Track the number of turns taken in this game
         self.turn_count = 0
 
     def spin_wheel(self):
@@ -62,21 +66,18 @@ class WheelOfFortune:
         if self.scores[self.current_player] < COST_OF_VOWEL:
             print("Not enough score to buy a vowel.")
             return False
-        
+
         letter = letter.upper()
         if letter not in VOWELS:
             print("You can only buy vowels.")
             return False
-            
-        # Deduct the cost of the vowel from the current player's score
+
         self.scores[self.current_player] -= COST_OF_VOWEL
-        
-        # Make the guess and return the result
         return self.guess_letter(letter)
 
     def solve_puzzle(self, guess):
         guess = guess.upper()
-        
+
         if guess == self.current_phrase:
             print("Congratulations! Player {} solved the puzzle!".format(self.current_player + 1))
             self.revealed_phrase = list(self.current_phrase)
@@ -104,6 +105,8 @@ class WheelOfFortune:
         return '_' not in self.revealed_phrase
 
     def start_game(self):
+        # Now we call reset_game() here, ensuring only one phrase selection per game
+        self.reset_game()
         print("Welcome to Wheel of Fortune!")
         while not self.is_solved():
             self.play_turn()
@@ -115,10 +118,11 @@ class WheelOfFortune:
             print("Congrats to Player {} for solving the puzzle!".format(self.current_player + 1))
         else:
             print("Game over.")
-        # Print the total number of turns taken
         print(f"Total turns taken: {self.turn_count}")
 
 if __name__ == "__main__":
+    import time
+
     with open("q_table.pkl", "rb") as f:
         q_table = pickle.load(f)
 
@@ -128,13 +132,23 @@ if __name__ == "__main__":
         return player
 
     total_turns = 0
+    total_score = 0
     num_games = 1000
 
+    start_time = time.time()
     for i in range(num_games):
         game = WheelOfFortune(words, wheel_values, num_players=1, player_class=q_player_factory)
         game.start_game()
         total_turns += game.turn_count
+        total_score += game.scores[0]
+    end_time = time.time()
 
     average_turns = total_turns / num_games
-    print(f"Average number of turns over {num_games} games: {average_turns}")
+    average_score = total_score / num_games
+    total_time = end_time - start_time
+    average_time_per_game = total_time / num_games
+
+    print(f"Average number of turns over {num_games} games: {average_turns:.2f}")
+    print(f"Average final score over {num_games} games: {average_score:.2f}")
+    print(f"Average time per game: {average_time_per_game:.4f} seconds")
 
