@@ -2,6 +2,8 @@ from constants import VOWELS, CONSONANTS
 import random
 import numpy as np
 from collections import Counter
+from naive_player import NaivePlayer
+
 COST_OF_VOWEL = 250
 
 file_path = 'data/popular.txt'
@@ -14,7 +16,7 @@ def find_char_positions(char, string):
     # Find all positions of char in string
     return [i for i, c in enumerate(string) if c == char]
 
-class Player:
+class InfoGainPlayer(NaivePlayer):
     def __init__(self, player_id):
         self.player_id = player_id
         self.bankrupt = False
@@ -62,18 +64,40 @@ class Player:
                 for i in range(len(true_word))
             ])
     
+    # def choose_vowel(self, game):
+    #     curr_entropy = np.log(len(self.candidates))
+    #     S = len(self.candidates)
+    #     information_gain = [0 for _ in range(len(VOWELS))]
+    #     for v in range(len(VOWELS)):
+    #         if v in game.guessed_letters:
+    #             information_gain[v] = 0
+    #             continue
+    #         letter = VOWELS[v]
+    #         new_candidates = [self.reveal_letter_in_pattern(game.revealed_phrase, letter, true_word) for true_word in self.candidates]
+    #         counts = Counter(new_candidates)
+    #         new_entropy = np.sum([i*np.log(i)/S for i in counts.values()])
+    #         information_gain[v] = (curr_entropy-new_entropy)/curr_entropy
+    #     print("Information gain with vowels:", information_gain)
+    #     return VOWELS[np.argmax(information_gain)]
+
     def choose_vowel(self, game):
+        VOWELS_NOT_REVEALED = [letter for letter in VOWELS if letter not in game.guessed_letters]
+        if len(VOWELS_NOT_REVEALED)==0:
+            return random.choice(VOWELS)
         curr_entropy = np.log(len(self.candidates))
         S = len(self.candidates)
-        information_gain = [0 for _ in range(len(VOWELS))]
-        for v in range(len(VOWELS)):
-            letter = VOWELS[v]
+        information_gain = np.zeros(len(VOWELS_NOT_REVEALED))
+        for v in range(len(VOWELS_NOT_REVEALED)):
+            letter = VOWELS_NOT_REVEALED[v]
             new_candidates = [self.reveal_letter_in_pattern(game.revealed_phrase, letter, true_word) for true_word in self.candidates]
             counts = Counter(new_candidates)
             new_entropy = np.sum([i*np.log(i)/S for i in counts.values()])
-            information_gain[v] = (curr_entropy-new_entropy)/curr_entropy
+            if curr_entropy==0:
+                information_gain[v] = 0
+            else:
+                information_gain[v] = (curr_entropy-new_entropy)/curr_entropy
         print("Information gain with vowels:", information_gain)
-        return VOWELS[np.argmax(information_gain)]
+        return VOWELS_NOT_REVEALED[np.argmax(information_gain)]
 
     def choose_solution(self):
         # placeholder- this can be overridden by subclasses
@@ -95,6 +119,9 @@ class Player:
         guessed_letter = self.choose_consonant(game)
         if guessed_letter in VOWELS:
             print("You cannot guess a vowel, you need to buy them.")
+            return
+        if guessed_letter in game.guessed_letters:
+            print(f"{guessed_letter} has already been guessed.")
             return
         if game.guess_letter(guessed_letter):
             points = spin_result * game.current_phrase.count(guessed_letter)
